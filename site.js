@@ -1,5 +1,5 @@
 
-const A='/assets/';
+const A='/';
 const img=(file,alt,cls='')=>`<img class="${cls}" src="${A+file}" alt="${alt}" loading="lazy">`;
 const tag=(s)=>`<span class="eyebrow">${s}</span>`;
 const button=(label,href)=>`<a class="btn" href="${href}">${label} ↗</a>`;
