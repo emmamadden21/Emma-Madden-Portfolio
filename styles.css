@@ -13,3 +13,31 @@
 
 /* The Bean editorial concept case study */
 .bean-hero-image{background:#edf2e9;padding:clamp(25px,5vw,60px);display:flex;align-items:center;justify-content:center;min-height:390px}.bean-hero-image img{width:min(100%,480px);height:auto;box-shadow:0 18px 35px #293d2a20}.bean-content{padding-top:35px}.bean-social,.bean-creative,.bean-takeaways{border-top:1px solid #dfc6c9;padding:50px 0 65px}.bean-social-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}.bean-social-grid p{font-size:14px;line-height:1.75}.bean-feed{margin:0;background:#f5f0eb;padding:22px}.bean-feed img{width:100%;display:block}.bean-feed figcaption{font-size:12px;color:var(--muted);padding-top:10px}.bean-pills{display:flex;gap:9px;flex-wrap:wrap;margin:25px 0}.bean-pills span{font-size:11px;border:1px solid #d9bdc0;padding:8px 11px;color:var(--burg)}.bean-note{font-size:11px!important;color:var(--muted)}.bean-creative-intro{max-width:730px;font-size:14px;line-height:1.75}.bean-creative-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:30px}.bean-creative-grid figure{margin:0}.bean-art{background:#f4eee9;min-height:420px;padding:22px;display:flex;align-items:center;justify-content:center}.bean-art img{height:420px;width:100%;object-fit:contain}.bean-creative-grid figcaption{padding:15px 5px}.bean-creative-grid h3{font-size:25px;margin:0 0 7px}.bean-creative-grid p{font-size:13px;margin:0}.bean-takeaways-grid{display:grid;grid-template-columns:1fr .75fr;gap:60px;align-items:center}.bean-takeaways-grid p{font-size:14px;line-height:1.75}.bean-logo-panel{background:#edf2e9;min-height:280px;padding:35px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:15px}.bean-logo-panel img{max-width:200px;width:100%;height:auto}.bean-logo-panel span{font-size:11px;color:#617b60;text-align:center}@media(max-width:700px){.bean-hero-image{min-height:280px}.bean-social-grid,.bean-creative-grid,.bean-takeaways-grid{grid-template-columns:1fr;gap:25px}.bean-art{min-height:340px}.bean-art img{height:340px}}
+
+/* The Bean: compact editorial case study */
+.bean-study-hero .exl-hero-grid{align-items:center;gap:clamp(25px,5vw,65px)}
+.bean-study-cover{max-width:440px;margin-left:auto}
+.bean-study{max-width:1120px;padding-bottom:90px}
+.bean-study h2{font-size:clamp(30px,3.5vw,49px);line-height:1.13;margin:12px 0 18px}
+.bean-study p{font-size:15px;line-height:1.8}
+.bean-study-intro,.bean-study-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(35px,6vw,90px);align-items:center;border-top:1px solid #dfc6c9;padding:65px 0}
+.bean-study-intro{align-items:start}
+.bean-study-row.reverse .bean-study-copy{order:2}
+.bean-study-row.reverse .bean-study-figure{order:1}
+.bean-study-copy{max-width:420px}
+.bean-study-figure{margin:0;min-width:0}
+.bean-study-frame{height:clamp(210px,27vw,335px);overflow:hidden;background:#f8f1ed;display:flex;align-items:center;justify-content:center}
+.bean-study-frame img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.bean-study-figure figcaption{font-size:11px;color:var(--muted);line-height:1.5;padding-top:11px}
+.bean-study-cover .bean-study-frame{height:clamp(230px,30vw,365px)}
+.bean-study-cover .bean-study-frame img{object-fit:cover}
+.bean-study-section{border-top:1px solid #dfc6c9;padding:65px 0}
+.bean-study-lead{max-width:650px;margin-bottom:30px}
+.bean-study-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.bean-study-gallery.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px}
+.bean-study-gallery .bean-study-frame{height:220px}
+.bean-study-gallery.two .bean-study-frame{height:300px}
+.bean-study-gallery.two img{object-fit:contain}
+.bean-study-outro{border-top:1px solid #dfc6c9;padding:60px 0;max-width:720px}
+@media(max-width:760px){.bean-study-intro,.bean-study-row{grid-template-columns:1fr;gap:24px;padding:42px 0}.bean-study-row.reverse .bean-study-copy,.bean-study-row.reverse .bean-study-figure{order:initial}.bean-study-cover{margin:0;max-width:100%}.bean-study-section{padding:42px 0}.bean-study-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.bean-study-gallery .bean-study-frame{height:180px}.bean-study-gallery.two .bean-study-frame{height:240px}}
+@media(max-width:480px){.bean-study-gallery,.bean-study-gallery.two{grid-template-columns:1fr}.bean-study-gallery .bean-study-frame,.bean-study-gallery.two .bean-study-frame{height:245px}}
