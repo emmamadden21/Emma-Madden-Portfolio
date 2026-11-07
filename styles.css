@@ -174,3 +174,8 @@
 
 /* Show more sky above Tillman Hall on the Clemson ExL case study hero only. */
 .exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{object-position:center center}
+
+/* Clemson ExL case study: taller frame retains flowers below Tillman and sky above. */
+.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{height:560px;object-fit:cover;object-position:center center}
+@media(max-width:900px){.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{height:440px}}
+@media(max-width:650px){.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{height:380px}}
