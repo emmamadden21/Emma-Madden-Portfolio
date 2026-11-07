@@ -189,3 +189,11 @@
 .exl-social .exl-social-grid{grid-template-columns:1fr .9fr 1fr;align-items:start;gap:26px}
 .exl-social .exl-social-copy{align-self:start;padding-top:6px}
 @media(max-width:650px){.exl-social .exl-social-grid{grid-template-columns:1fr}}
+
+/* Instagram-style phone: preserve the complete feed image rather than cropping it. */
+.exl-phone-screen{height:100%;display:flex;flex-direction:column;background:#fff;padding-top:19px;box-sizing:border-box}
+.exl-instagram-top{height:45px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 17px;border-bottom:1px solid #eee;font-family:Arial,sans-serif;color:#222;font-size:15px}
+.exl-instagram-top strong{font-size:14px;font-weight:700}.exl-instagram-back{font-size:28px;font-weight:300;line-height:1}
+.exl-instagram-feed{flex:1;min-height:0;overflow-y:auto;scrollbar-width:none}.exl-instagram-feed::-webkit-scrollbar{display:none}
+.exl-instagram-feed img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:top center}
+.exl-instagram-bottom{height:48px;flex:none;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-around;color:#242424;font-size:24px;line-height:1;background:white}
