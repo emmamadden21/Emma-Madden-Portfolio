@@ -129,9 +129,3 @@
 .academic-project-arrow{left:auto;right:17px;bottom:13px;font-size:21px;color:var(--orange)}
 .academic-project-button:hover,.academic-project-button:focus-visible{background:#fff3ee;border-color:var(--orange);transform:translateY(-3px)}
 @media(max-width:650px){.academic-project-button{border-radius:4px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-arrow{right:12px;bottom:10px}}
-
-/* Shorter academic tiles: preserve four-column layout, remove excess vertical space. */
-.academic-project-button{aspect-ratio:auto;min-height:155px;padding:30px 15px}
-.academic-project-button strong{font-size:clamp(19px,1.95vw,29px)}
-@media(max-width:800px){.academic-project-button{min-height:150px}}
-@media(max-width:650px){.academic-project-button{min-height:132px;padding:28px 12px}}
