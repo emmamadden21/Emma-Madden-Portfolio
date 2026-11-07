@@ -166,3 +166,8 @@
 
 /* Portfolio project category labels: muted burgundy instead of black. */
 .gallery .card[href="#blue-line"] .small,.gallery .card[href="#the-bean"] .small{color:#90003d;opacity:.78}
+
+/* Academic tiles: centered project names with understated category underneath. */
+.academic-project-button{flex-direction:column;gap:8px}
+.academic-project-category{display:block;font-size:12px;font-weight:400;letter-spacing:.015em;line-height:1.3;color:#90003d;opacity:.78;text-align:center}
+@media(max-width:650px){.academic-project-category{font-size:10px}}
