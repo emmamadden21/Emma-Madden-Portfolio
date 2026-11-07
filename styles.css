@@ -238,3 +238,8 @@
 .exl-brand-grid>figure:nth-child(2) img{height:185px;max-width:82%;margin:0 auto}
 .exl-brand-grid>figure:nth-child(3) img{height:315px;padding:5px}
 @media(max-width:650px){.exl-brand-grid>figure:nth-child(3) img{height:290px}}
+
+/* Scale sticker sheet up and bring its artwork level with the section heading. */
+.exl-brand-grid>figure:nth-child(3){margin-top:-105px;position:relative}
+.exl-brand-grid>figure:nth-child(3) img{height:420px;width:100%;padding:0;object-fit:contain}
+@media(max-width:650px){.exl-brand-grid>figure:nth-child(3){margin-top:0}.exl-brand-grid>figure:nth-child(3) img{height:330px}}
