@@ -283,3 +283,7 @@
 .exl-brand-grid figure figcaption strong{display:block;line-height:1.2}
 .exl-brand-grid figure figcaption p{margin:6px 0 0}
 @media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr;row-gap:28px}.exl-brand-intro{grid-column:1;grid-row:1}.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:min(100%,390px)}.exl-brand-grid>figure:nth-child(3){grid-column:1;grid-row:3}.exl-brand-grid>figure:nth-child(3) img{height:340px}}
+
+/* Larger sticker sheet without disturbing the business-card layout. */
+.exl-brand-grid>figure:nth-child(3) img{height:485px}
+@media(max-width:650px){.exl-brand-grid>figure:nth-child(3) img{height:400px}}
