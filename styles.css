@@ -173,4 +173,4 @@
 @media(max-width:650px){.academic-project-category{font-size:10px}}
 
 /* Show more sky above Tillman Hall on the Clemson ExL case study hero only. */
-.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{object-position:center 12%}
+.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{object-position:center center}
