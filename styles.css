@@ -287,3 +287,6 @@
 /* Larger sticker sheet without disturbing the business-card layout. */
 .exl-brand-grid>figure:nth-child(3) img{height:485px}
 @media(max-width:650px){.exl-brand-grid>figure:nth-child(3) img{height:400px}}
+
+/* Bottom-align sticker sheet and business card artwork across the two columns. */
+@media(min-width:651px){.exl-brand-grid>figure:nth-child(2),.exl-brand-grid>figure:nth-child(3){align-self:end}.exl-brand-grid>figure:nth-child(3){grid-row:1 / span 2}}
