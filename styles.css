@@ -206,3 +206,6 @@
 .exl-phone.exl-phone-profile{height:530px;display:block;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;background:#fff}
 .exl-phone.exl-phone-profile::-webkit-scrollbar{display:none}
 .exl-phone.exl-phone-profile>img{display:block;width:100%;height:auto;max-height:none;object-fit:unset;object-position:initial;transform:none}
+
+/* Slightly enlarge the Instagram profile within the phone for a natural screen fit. */
+.exl-phone.exl-phone-profile>img{width:108%;max-width:none;height:auto;margin-left:-4%;}
