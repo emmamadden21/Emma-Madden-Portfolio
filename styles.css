@@ -254,3 +254,13 @@
 .exl-brand-grid>figure:nth-child(3){grid-column:2;grid-row:1 / span 2;align-self:start;margin:0;position:static}
 .exl-brand-grid>figure:nth-child(3) img{height:470px;width:100%;padding:0;object-fit:contain}
 @media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr;row-gap:24px}.exl-brand-intro{grid-column:1;grid-row:1}.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:85%}.exl-brand-grid>figure:nth-child(3){grid-column:1;grid-row:3;margin:0}.exl-brand-grid>figure:nth-child(3) img{height:360px}}
+
+/* Refine spacing and captions for the two branded-materials visuals. */
+.exl-brand-grid{column-gap:46px;row-gap:16px}
+.exl-brand-grid>figure:nth-child(2){width:78%;margin-top:0}
+.exl-brand-grid>figure:nth-child(2) img{height:175px;display:block}
+.exl-brand-grid>figure:nth-child(3) img{height:390px;display:block}
+.exl-brand-grid figure figcaption{padding:14px 0 0}
+.exl-brand-grid figure figcaption strong{display:block;line-height:1.2}
+.exl-brand-grid figure figcaption p{margin:6px 0 0}
+@media(max-width:650px){.exl-brand-grid{row-gap:24px}.exl-brand-grid>figure:nth-child(2){width:85%}.exl-brand-grid>figure:nth-child(3) img{height:340px}}
