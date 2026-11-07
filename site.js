@@ -6,7 +6,7 @@ const button=(label,href)=>`<a class="btn" href="${href}">${label} ↗</a>`;
 const work=[
  {name:'Clemson Experiential Learning',label:'Professional · Marketing Strategy & Storytelling',href:'#clemson',img:'campus.jpg'},
  {name:'Blue Line Technologies',label:'Professional · Brand Identity & B2B Marketing',href:'#blue-line',img:'blue-line-horizontal-transparent.png'},
- {name:'The Bean',label:'Personal Project · Brand & Social Media Strategy',href:'#the-bean',img:'bean-storefront.jpg'}
+ {name:'The Bean',label:'Personal Project · Brand & Social Media Strategy',href:'#the-bean',img:'the-bean-logo-transparent.png'}
 ];
 const academic=[
  {name:'Marketing Research & AI',subtitle:'AI, Consumer Insights & Advertising Research',body:'A collaborative graduate presentation examining AI-powered consumer research through Spotify, Netflix, and Kantar. My research focused on behavioral data, creative experimentation, and the reliability of synthetic respondents.',skills:['Marketing Research','AI & Consumer Insights','Industry Case Studies','Presentation'],href:'#marketing-research-ai'},
