@@ -111,3 +111,12 @@
 .academic-project-arrow{position:absolute;bottom:22px;left:0;right:0;font-size:28px;line-height:1}
 .academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;transform:translateY(-2px)}
 @media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:18px;border-radius:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,27px)}.academic-project-number{top:13px;font-size:8px}.academic-project-arrow{bottom:11px;font-size:22px}}
+
+/* Refine academic buttons: smaller, lighter square tiles with more breathing room. */
+.academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px 0 72px}
+.academic-project-button{aspect-ratio:1/1;padding:20px 14px;border:1px solid #c9a7ad;border-radius:10px;background:#f8eeec;gap:8px}
+.academic-project-button strong{font-size:clamp(18px,1.85vw,27px);max-width:96%;line-height:1.18}
+.academic-project-number{top:16px;font-size:9px;letter-spacing:.08em;color:#916c75}
+.academic-project-arrow{bottom:12px;font-size:20px}
+@media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.academic-project-button strong{font-size:clamp(19px,3.5vw,28px)}}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:16px 10px;border-radius:10px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-number{top:12px;font-size:8px}.academic-project-arrow{bottom:10px;font-size:19px}}
