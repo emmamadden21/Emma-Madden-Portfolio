@@ -233,3 +233,8 @@
 .exl-brand-intro h2{max-width:760px;margin-bottom:14px}
 .exl-brand-intro p{max-width:620px}
 @media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr}.exl-brand-intro{grid-column:1}}
+
+/* Give sticker artwork greater visual emphasis than the business card. */
+.exl-brand-grid>figure:nth-child(2) img{height:185px;max-width:82%;margin:0 auto}
+.exl-brand-grid>figure:nth-child(3) img{height:315px;padding:5px}
+@media(max-width:650px){.exl-brand-grid>figure:nth-child(3) img{height:290px}}
