@@ -69,3 +69,6 @@
 .academic-study-visuals img{display:block;width:100%;height:auto;max-height:450px;object-fit:contain;background:#f8f0ed}
 .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:1/-1}
 @media(max-width:650px){.exl-objective-grid{grid-template-columns:1fr}.exl-objective-grid>div{border-right:0!important;padding:0!important}.academic-study-section{grid-template-columns:1fr;padding:38px 0}.academic-study-cover img{max-height:320px}}
+
+/* Blue Line: let both original transparent logos sit directly on the page background. */
+.bl-hero-logo,.bl-logo-image{background:transparent;border:0;box-shadow:none}
