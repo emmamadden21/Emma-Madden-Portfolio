@@ -129,3 +129,12 @@
 .academic-project-arrow{left:auto;right:17px;bottom:13px;font-size:21px;color:var(--orange)}
 .academic-project-button:hover,.academic-project-button:focus-visible{background:#fff3ee;border-color:var(--orange);transform:translateY(-3px)}
 @media(max-width:650px){.academic-project-button{border-radius:4px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-arrow{right:12px;bottom:10px}}
+
+/* Minimal academic project buttons: typography-first, no orange decoration. */
+.academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0 72px}
+.academic-project-button{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:18px;background:#f7eeec;border:1px solid #e2cdd0;border-radius:12px;box-shadow:none;transform:none;overflow:hidden}
+.academic-project-button::before{display:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(19px,2vw,28px);line-height:1.2;text-align:center;max-width:100%;letter-spacing:0}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1dfe0;border-color:var(--burg);transform:translateY(-2px)}
+@media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.academic-button-grid{gap:12px}.academic-project-button{padding:14px;border-radius:10px}.academic-project-button strong{font-size:clamp(18px,4.4vw,24px)}}
