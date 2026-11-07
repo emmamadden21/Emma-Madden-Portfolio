@@ -5,7 +5,7 @@ const tag=(s)=>`<span class="eyebrow">${s}</span>`;
 const button=(label,href)=>`<a class="btn" href="${href}">${label} ↗</a>`;
 const work=[
  {name:'Clemson Experiential Learning',label:'Professional · Marketing Strategy & Storytelling',href:'#clemson',img:'campus.jpg'},
- {name:'Blue Line Technologies',label:'Professional · Brand Identity & B2B Marketing',href:'#blue-line',img:'blue-badge.jpg'},
+ {name:'Blue Line Technologies',label:'Professional · Brand Identity & B2B Marketing',href:'#blue-line',img:'blue-horizontal.jpg'},
  {name:'The Bean',label:'Personal Project · Brand & Social Media Strategy',href:'#the-bean',img:'bean-storefront.jpg'}
 ];
 const academic=[
