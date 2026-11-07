@@ -293,3 +293,6 @@
 
 /* Nudge sticker artwork left while preserving its size and bottom alignment. */
 @media(min-width:651px){.exl-brand-grid>figure:nth-child(3){transform:translateX(-28px)}}
+
+/* Align the sticker artwork's left edge with its caption. */
+@media(min-width:651px){.exl-brand-grid>figure:nth-child(3){transform:none}.exl-brand-grid>figure:nth-child(3) img{object-position:left center}}
