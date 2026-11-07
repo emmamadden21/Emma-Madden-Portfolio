@@ -264,3 +264,8 @@
 .exl-brand-grid figure figcaption strong{display:block;line-height:1.2}
 .exl-brand-grid figure figcaption p{margin:6px 0 0}
 @media(max-width:650px){.exl-brand-grid{row-gap:24px}.exl-brand-grid>figure:nth-child(2){width:85%}.exl-brand-grid>figure:nth-child(3) img{height:340px}}
+
+/* Align each materials caption with the visible artwork rather than the grid edge. */
+.exl-brand-grid>figure:nth-child(2) img{object-position:left center}
+.exl-brand-grid>figure:nth-child(3) img{object-position:left center}
+.exl-brand-grid>figure:nth-child(2) figcaption,.exl-brand-grid>figure:nth-child(3) figcaption{padding-left:0;text-align:left}
