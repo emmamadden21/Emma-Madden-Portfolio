@@ -102,3 +102,12 @@
 .academic-project-arrow{font-size:26px;line-height:1}
 .academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;border-color:var(--burg);transform:translateY(-2px)}
 @media(max-width:650px){.academic-button-grid{grid-template-columns:1fr;gap:12px}.academic-project-button{padding:21px 23px}}
+
+/* Square academic navigation tiles, centered project names. */
+.academic-button-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:24px 0 85px}
+.academic-project-button{aspect-ratio:1/1;min-height:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;padding:30px;background:#f7e9e7;border:2px solid var(--burg);border-radius:18px;color:var(--burg);text-decoration:none;position:relative;transform:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(27px,3.3vw,47px);line-height:1.12;max-width:90%}
+.academic-project-number{position:absolute;top:24px;left:0;right:0;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--burg)}
+.academic-project-arrow{position:absolute;bottom:22px;left:0;right:0;font-size:28px;line-height:1}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;transform:translateY(-2px)}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:18px;border-radius:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,27px)}.academic-project-number{top:13px;font-size:8px}.academic-project-arrow{bottom:11px;font-size:22px}}
