@@ -120,3 +120,12 @@
 .academic-project-arrow{bottom:12px;font-size:20px}
 @media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.academic-project-button strong{font-size:clamp(19px,3.5vw,28px)}}
 @media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:16px 10px;border-radius:10px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-number{top:12px;font-size:8px}.academic-project-arrow{bottom:10px;font-size:19px}}
+
+/* Editorial academic tiles: restrained, brand-led, with a corner accent. */
+.academic-project-button{background:#fffaf5;border:1px solid #dec8c7;border-radius:4px;box-shadow:inset 0 0 0 7px #fffaf5;position:relative;overflow:hidden;transition:background .2s,border-color .2s,transform .2s}
+.academic-project-button::before{content:"";position:absolute;left:0;top:0;width:42px;height:5px;background:var(--orange)}
+.academic-project-button strong{font-size:clamp(19px,1.95vw,29px);letter-spacing:-.015em}
+.academic-project-number{color:#a2777e;letter-spacing:.12em}
+.academic-project-arrow{left:auto;right:17px;bottom:13px;font-size:21px;color:var(--orange)}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#fff3ee;border-color:var(--orange);transform:translateY(-3px)}
+@media(max-width:650px){.academic-project-button{border-radius:4px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-arrow{right:12px;bottom:10px}}
