@@ -226,3 +226,10 @@
 
 /* Alumni portrait: position Maggie slightly lower in her frame to leave headroom. */
 .exl-alumni-grid .exl-alumni-card:first-child .exl-alumni-image img{object-position:center 25%}
+
+/* Branded materials: full-width heading with the business card beneath it. */
+.exl-brand-grid{grid-template-columns:1fr 1fr;gap:26px 32px;align-items:start}
+.exl-brand-intro{grid-column:1/-1;max-width:760px}
+.exl-brand-intro h2{max-width:760px;margin-bottom:14px}
+.exl-brand-intro p{max-width:620px}
+@media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr}.exl-brand-intro{grid-column:1}}
