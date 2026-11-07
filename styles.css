@@ -218,3 +218,8 @@
 .exl-phone.exl-phone-profile{position:relative;isolation:isolate;border:8px solid #222326;border-radius:43px;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;background:#fff}
 .exl-phone.exl-phone-profile>img{width:100%;max-width:100%;height:auto;margin-left:0;display:block;transform:none}
 .exl-phone.exl-phone-profile::before{content:"";position:sticky;top:0;display:block;width:37%;height:20px;margin:0 auto -20px;background:#222326;border-radius:0 0 15px 15px;z-index:5;pointer-events:none}
+
+/* Match approved reference: Instagram username begins just below camera island, no iOS status bar. */
+.exl-phone.exl-phone-profile{width:min(100%,295px);height:530px;border:8px solid #222326;border-radius:43px;overflow:auto hidden;scrollbar-width:none;background:#fff;box-sizing:border-box}
+.exl-phone.exl-phone-profile::before{position:sticky;top:0;width:38%;height:21px;margin:0 auto -21px;border-radius:0 0 15px 15px;background:#222326;z-index:10}
+.exl-phone.exl-phone-profile>img{display:block;width:100%;max-width:100%;height:auto;margin:-31px 0 0;transform:none;object-fit:unset}
