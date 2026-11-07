@@ -72,3 +72,7 @@
 
 /* Blue Line: let both original transparent logos sit directly on the page background. */
 .bl-hero-logo,.bl-logo-image{background:transparent;border:0;box-shadow:none}
+
+/* Portfolio page: horizontal Blue Line logo blends into the page canvas. */
+.gallery .card[href="#blue-line"] .thumb{background:transparent;padding:26px;overflow:visible}
+.gallery .card[href="#blue-line"] .thumb img{object-fit:contain}
