@@ -290,3 +290,6 @@
 
 /* Bottom-align sticker sheet and business card artwork across the two columns. */
 @media(min-width:651px){.exl-brand-grid>figure:nth-child(2),.exl-brand-grid>figure:nth-child(3){align-self:end}.exl-brand-grid>figure:nth-child(3){grid-row:1 / span 2}}
+
+/* Nudge sticker artwork left while preserving its size and bottom alignment. */
+@media(min-width:651px){.exl-brand-grid>figure:nth-child(3){transform:translateX(-28px)}}
