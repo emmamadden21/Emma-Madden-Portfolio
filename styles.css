@@ -138,3 +138,11 @@
 .academic-project-button:hover,.academic-project-button:focus-visible{background:#f1dfe0;border-color:var(--burg);transform:translateY(-2px)}
 @media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.academic-button-grid{gap:12px}.academic-project-button{padding:14px;border-radius:10px}.academic-project-button strong{font-size:clamp(18px,4.4vw,24px)}}
+
+/* Academic tiles matched to supplied reference: flat dusty-blush squares and burgundy serif names. */
+.academic-project-button{aspect-ratio:1/1;background:#eadadd;border:0;border-radius:0;box-shadow:none;padding:18px}
+.academic-project-button::before{display:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(20px,2.2vw,32px);line-height:1.22;color:#90003d;max-width:95%;text-align:center}
+.academic-tile-star{display:inline-block;margin-left:.18em;font-family:Georgia,serif;font-size:.72em;font-weight:400;vertical-align:baseline}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#e5d0d5;border:0;transform:translateY(-2px)}
+@media(max-width:650px){.academic-project-button{border-radius:0;padding:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,25px)}}
