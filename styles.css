@@ -163,3 +163,6 @@
 /* Ensure the single CU-ExL logo fits fully; override generic card image cropping. */
 .cards .card[href="#clemson"] .exl-home-thumb>img:first-child{position:static;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
 .cards .card[href="#clemson"]:hover .exl-home-thumb>img:first-child{transform:none}
+
+/* Portfolio project category labels: muted burgundy instead of black. */
+.gallery .card[href="#blue-line"] .small,.gallery .card[href="#the-bean"] .small{color:#90003d;opacity:.78}
