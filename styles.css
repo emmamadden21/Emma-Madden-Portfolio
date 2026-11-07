@@ -184,3 +184,8 @@
 .exl-social-intro{max-width:740px;margin:14px 0 34px;font-size:14px;line-height:1.7}
 .exl-social .exl-social-grid{grid-template-columns:1fr 1fr;align-items:start;gap:clamp(28px,5vw,70px)}
 @media(max-width:650px){.exl-social .exl-social-grid{grid-template-columns:1fr}.exl-social-intro{margin-bottom:28px}}
+
+/* Keep copy left, phone centered, content types right; align copy near top. */
+.exl-social .exl-social-grid{grid-template-columns:1fr .9fr 1fr;align-items:start;gap:26px}
+.exl-social .exl-social-copy{align-self:start;padding-top:6px}
+@media(max-width:650px){.exl-social .exl-social-grid{grid-template-columns:1fr}}
