@@ -93,3 +93,12 @@
 .portfolio-feature{overflow:hidden}
 .portfolio-feature>img{object-fit:cover;object-position:50% 22%;transform:scale(1.06);transform-origin:center 40%}
 @media(max-width:700px){.portfolio-feature>img{object-position:50% 18%;transform:scale(1.035)}}
+
+/* Compact, clickable academic project buttons on the Portfolio page. */
+.academic-button-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0 85px}
+.academic-project-button{min-width:0;display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:14px;row-gap:7px;padding:26px 30px;border:1px solid #ddc3c7;background:#f7e9e7;color:var(--burg);text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.academic-project-number{grid-column:1/-1;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(23px,2.5vw,34px);font-weight:400;line-height:1.2}
+.academic-project-arrow{font-size:26px;line-height:1}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;border-color:var(--burg);transform:translateY(-2px)}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:1fr;gap:12px}.academic-project-button{padding:21px 23px}}
