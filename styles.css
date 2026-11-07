@@ -45,3 +45,121 @@
 /* Preserve full case-study boards without cropping their content. */
 .bean-study-row .bean-study-frame{height:auto;overflow:visible}
 .bean-study-row .bean-study-frame img{width:100%;height:auto;object-fit:contain;display:block}
+
+/* Deployment 3 staging: academic portfolio grid */
+.academic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:20px 0 85px}.academic-grid .thumb{height:290px;background:#f8f0ed}.academic-grid .thumb img{object-fit:contain}.academic-grid .eyebrow{display:block;margin-top:16px}.academic-grid .card h3{margin-top:6px}.portfolio-feature{display:grid}.portfolio-feature:hover .link{text-decoration:underline}@media(max-width:650px){.academic-grid{grid-template-columns:1fr;gap:24px}.academic-grid .thumb{height:245px}}
+
+/* Deployment 3 editorial updates */
+.exl-objective-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.exl-contributions{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
+.exl-contributions span{border-left:2px solid var(--orange);padding:7px 11px;background:#faece9;font-size:12px;font-weight:700;color:var(--burg)}
+.exl-brand figure img{padding:0;background:transparent;box-shadow:none;height:auto;max-height:330px;object-fit:contain}
+.exl-brand-grid figure:last-child img{max-height:400px}
+.bl-logo-grid{margin:35px 0 65px}
+.bl-logo-image{background:transparent;border:0}
+.bl-logo-image img{object-fit:contain}
+.bean-study-row .bean-study-frame img{object-fit:contain}
+.academic-study-cover{background:#f7ece9;padding:24px;min-width:0}
+.academic-study-cover img{width:100%;max-height:470px;object-fit:contain}
+.academic-study-content{padding-bottom:70px}
+.academic-study-section{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,75px);padding:60px 0;border-top:1px solid #dfc6c9;align-items:center}
+.academic-study-section h2{font-size:clamp(32px,3.5vw,50px)}
+.academic-study-section p{font-size:15px;line-height:1.8}
+.academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.academic-study-visuals img{display:block;width:100%;height:auto;max-height:450px;object-fit:contain;background:#f8f0ed}
+.academic-study-visuals img:first-child:nth-last-child(odd){grid-column:1/-1}
+@media(max-width:650px){.exl-objective-grid{grid-template-columns:1fr}.exl-objective-grid>div{border-right:0!important;padding:0!important}.academic-study-section{grid-template-columns:1fr;padding:38px 0}.academic-study-cover img{max-height:320px}}
+
+/* Blue Line: let both original transparent logos sit directly on the page background. */
+.bl-hero-logo,.bl-logo-image{background:transparent;border:0;box-shadow:none}
+
+/* Portfolio page: horizontal Blue Line logo blends into the page canvas. */
+.gallery .card[href="#blue-line"] .thumb{background:transparent;padding:26px;overflow:visible}
+.gallery .card[href="#blue-line"] .thumb img{object-fit:contain}
+
+/* Fit the entire horizontal Blue Line logo within its portfolio card. */
+.gallery .card[href="#blue-line"] .thumb{height:300px;padding:48px 52px;box-sizing:border-box;overflow:hidden}
+.gallery .card[href="#blue-line"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.gallery .card[href="#blue-line"]:hover .thumb img{transform:none}
+@media(max-width:650px){.gallery .card[href="#blue-line"] .thumb{padding:35px 28px}}
+
+/* Portfolio page: show the complete Bean artwork without cropping or hover zoom. */
+.gallery .card[href="#the-bean"] .thumb{height:300px;padding:48px 52px;box-sizing:border-box;overflow:hidden;background:transparent}
+.gallery .card[href="#the-bean"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.gallery .card[href="#the-bean"]:hover .thumb img{transform:none}
+@media(max-width:650px){.gallery .card[href="#the-bean"] .thumb{padding:35px 28px}}
+
+/* Deployment 3: reframe Tillman Hall in the featured Portfolio photograph. */
+.portfolio-feature{overflow:hidden}
+.portfolio-feature>img{object-fit:cover;object-position:50% 22%;transform:scale(1.06);transform-origin:center 40%}
+@media(max-width:700px){.portfolio-feature>img{object-position:50% 18%;transform:scale(1.035)}}
+
+/* Compact, clickable academic project buttons on the Portfolio page. */
+.academic-button-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0 85px}
+.academic-project-button{min-width:0;display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:14px;row-gap:7px;padding:26px 30px;border:1px solid #ddc3c7;background:#f7e9e7;color:var(--burg);text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.academic-project-number{grid-column:1/-1;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(23px,2.5vw,34px);font-weight:400;line-height:1.2}
+.academic-project-arrow{font-size:26px;line-height:1}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;border-color:var(--burg);transform:translateY(-2px)}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:1fr;gap:12px}.academic-project-button{padding:21px 23px}}
+
+/* Square academic navigation tiles, centered project names. */
+.academic-button-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:24px 0 85px}
+.academic-project-button{aspect-ratio:1/1;min-height:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;padding:30px;background:#f7e9e7;border:2px solid var(--burg);border-radius:18px;color:var(--burg);text-decoration:none;position:relative;transform:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(27px,3.3vw,47px);line-height:1.12;max-width:90%}
+.academic-project-number{position:absolute;top:24px;left:0;right:0;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--burg)}
+.academic-project-arrow{position:absolute;bottom:22px;left:0;right:0;font-size:28px;line-height:1}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;transform:translateY(-2px)}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:18px;border-radius:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,27px)}.academic-project-number{top:13px;font-size:8px}.academic-project-arrow{bottom:11px;font-size:22px}}
+
+/* Refine academic buttons: smaller, lighter square tiles with more breathing room. */
+.academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px 0 72px}
+.academic-project-button{aspect-ratio:1/1;padding:20px 14px;border:1px solid #c9a7ad;border-radius:10px;background:#f8eeec;gap:8px}
+.academic-project-button strong{font-size:clamp(18px,1.85vw,27px);max-width:96%;line-height:1.18}
+.academic-project-number{top:16px;font-size:9px;letter-spacing:.08em;color:#916c75}
+.academic-project-arrow{bottom:12px;font-size:20px}
+@media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.academic-project-button strong{font-size:clamp(19px,3.5vw,28px)}}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:16px 10px;border-radius:10px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-number{top:12px;font-size:8px}.academic-project-arrow{bottom:10px;font-size:19px}}
+
+/* Editorial academic tiles: restrained, brand-led, with a corner accent. */
+.academic-project-button{background:#fffaf5;border:1px solid #dec8c7;border-radius:4px;box-shadow:inset 0 0 0 7px #fffaf5;position:relative;overflow:hidden;transition:background .2s,border-color .2s,transform .2s}
+.academic-project-button::before{content:"";position:absolute;left:0;top:0;width:42px;height:5px;background:var(--orange)}
+.academic-project-button strong{font-size:clamp(19px,1.95vw,29px);letter-spacing:-.015em}
+.academic-project-number{color:#a2777e;letter-spacing:.12em}
+.academic-project-arrow{left:auto;right:17px;bottom:13px;font-size:21px;color:var(--orange)}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#fff3ee;border-color:var(--orange);transform:translateY(-3px)}
+@media(max-width:650px){.academic-project-button{border-radius:4px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-arrow{right:12px;bottom:10px}}
+
+/* Minimal academic project buttons: typography-first, no orange decoration. */
+.academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0 72px}
+.academic-project-button{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:18px;background:#f7eeec;border:1px solid #e2cdd0;border-radius:12px;box-shadow:none;transform:none;overflow:hidden}
+.academic-project-button::before{display:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(19px,2vw,28px);line-height:1.2;text-align:center;max-width:100%;letter-spacing:0}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1dfe0;border-color:var(--burg);transform:translateY(-2px)}
+@media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.academic-button-grid{gap:12px}.academic-project-button{padding:14px;border-radius:10px}.academic-project-button strong{font-size:clamp(18px,4.4vw,24px)}}
+
+/* Academic tiles matched to supplied reference: flat dusty-blush squares and burgundy serif names. */
+.academic-project-button{aspect-ratio:1/1;background:#eadadd;border:0;border-radius:0;box-shadow:none;padding:18px}
+.academic-project-button::before{display:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(20px,2.2vw,32px);line-height:1.22;color:#90003d;max-width:95%;text-align:center}
+.academic-tile-star{display:inline-block;margin-left:.18em;font-family:Georgia,serif;font-size:.72em;font-weight:400;vertical-align:baseline}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#e5d0d5;border:0;transform:translateY(-2px)}
+@media(max-width:650px){.academic-project-button{border-radius:0;padding:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,25px)}}
+
+/* Homepage: show full Blue Line and Bean logos without cropping or hover zoom. */
+.cards .card[href="#blue-line"] .thumb,.cards .card[href="#the-bean"] .thumb{padding:22px;box-sizing:border-box;background:transparent;overflow:hidden}
+.cards .card[href="#blue-line"] .thumb img,.cards .card[href="#the-bean"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.cards .card[href="#blue-line"]:hover .thumb img,.cards .card[href="#the-bean"]:hover .thumb img{transform:none}
+@media(max-width:650px){.cards .card[href="#blue-line"] .thumb,.cards .card[href="#the-bean"] .thumb{padding:12px}}
+
+/* Homepage CU-ExL card: isolated logo, matching Blue Line and The Bean. */
+.cards .card[href="#clemson"] .thumb{padding:22px;box-sizing:border-box;background:transparent;overflow:hidden}
+.cards .exl-home-thumb::after{display:none}
+.cards .exl-home-thumb .exl-home-logo{position:static;display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none;filter:none}
+.cards .card:hover .exl-home-thumb .exl-home-logo{transform:none}
+@media(max-width:650px){.cards .card[href="#clemson"] .thumb{padding:12px}}
+
+/* Ensure the single CU-ExL logo fits fully; override generic card image cropping. */
+.cards .card[href="#clemson"] .exl-home-thumb>img:first-child{position:static;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.cards .card[href="#clemson"]:hover .exl-home-thumb>img:first-child{transform:none}
