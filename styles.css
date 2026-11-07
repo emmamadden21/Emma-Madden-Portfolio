@@ -269,3 +269,17 @@
 .exl-brand-grid>figure:nth-child(2) img{object-position:left center}
 .exl-brand-grid>figure:nth-child(3) img{object-position:left center}
 .exl-brand-grid>figure:nth-child(2) figcaption,.exl-brand-grid>figure:nth-child(3) figcaption{padding-left:0;text-align:left}
+
+/* Cohesive promotional materials composition: balanced artwork and captions. */
+.exl-brand-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:56px;row-gap:24px;align-items:start}
+.exl-brand-intro{grid-column:1;grid-row:1;max-width:none}
+.exl-brand-intro h2{max-width:none;margin:0 0 18px}
+.exl-brand-intro p{max-width:570px;margin:0;line-height:1.7}
+.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:min(100%,390px);margin:0;align-self:start}
+.exl-brand-grid>figure:nth-child(3){grid-column:2;grid-row:1/span 2;width:100%;margin:0;align-self:start;position:static}
+.exl-brand-grid>figure:nth-child(2) img{width:100%;max-width:none;height:215px;padding:0;object-fit:contain;object-position:center;background:transparent;box-shadow:none;display:block}
+.exl-brand-grid>figure:nth-child(3) img{width:100%;height:390px;padding:0;object-fit:contain;object-position:center;background:transparent;box-shadow:none;display:block}
+.exl-brand-grid figure figcaption{padding:12px 0 0;text-align:left}
+.exl-brand-grid figure figcaption strong{display:block;line-height:1.2}
+.exl-brand-grid figure figcaption p{margin:6px 0 0}
+@media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr;row-gap:28px}.exl-brand-intro{grid-column:1;grid-row:1}.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:min(100%,390px)}.exl-brand-grid>figure:nth-child(3){grid-column:1;grid-row:3}.exl-brand-grid>figure:nth-child(3) img{height:340px}}
