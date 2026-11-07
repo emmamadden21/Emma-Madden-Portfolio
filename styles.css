@@ -88,3 +88,8 @@
 .gallery .card[href="#the-bean"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
 .gallery .card[href="#the-bean"]:hover .thumb img{transform:none}
 @media(max-width:650px){.gallery .card[href="#the-bean"] .thumb{padding:35px 28px}}
+
+/* Deployment 3: reframe Tillman Hall in the featured Portfolio photograph. */
+.portfolio-feature{overflow:hidden}
+.portfolio-feature>img{object-fit:cover;object-position:50% 22%;transform:scale(1.06);transform-origin:center 40%}
+@media(max-width:700px){.portfolio-feature>img{object-position:50% 18%;transform:scale(1.035)}}
