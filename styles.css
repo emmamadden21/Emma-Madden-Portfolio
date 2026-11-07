@@ -201,3 +201,8 @@
 /* Preserve the supplied Instagram profile screenshot from top to bottom. */
 .exl-phone.exl-phone-profile{height:530px;display:flex;align-items:flex-start;justify-content:center;background:#fff;overflow:hidden}
 .exl-phone.exl-phone-profile>img{width:100%;height:100%;object-fit:contain;object-position:center top;transform:none}
+
+/* Actual Clemson Instagram screenshot: display from profile header downward, with scroll for posts. */
+.exl-phone.exl-phone-profile{height:530px;display:block;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;background:#fff}
+.exl-phone.exl-phone-profile::-webkit-scrollbar{display:none}
+.exl-phone.exl-phone-profile>img{display:block;width:100%;height:auto;max-height:none;object-fit:unset;object-position:initial;transform:none}
