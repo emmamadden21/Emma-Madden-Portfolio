@@ -197,3 +197,7 @@
 .exl-instagram-feed{flex:1;min-height:0;overflow-y:auto;scrollbar-width:none}.exl-instagram-feed::-webkit-scrollbar{display:none}
 .exl-instagram-feed img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:top center}
 .exl-instagram-bottom{height:48px;flex:none;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-around;color:#242424;font-size:24px;line-height:1;background:white}
+
+/* Preserve the supplied Instagram profile screenshot from top to bottom. */
+.exl-phone.exl-phone-profile{height:530px;display:flex;align-items:flex-start;justify-content:center;background:#fff;overflow:hidden}
+.exl-phone.exl-phone-profile>img{width:100%;height:100%;object-fit:contain;object-position:center top;transform:none}
