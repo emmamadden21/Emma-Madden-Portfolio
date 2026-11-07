@@ -213,3 +213,8 @@
 /* Refined realistic phone framing: less screenshot zoom and a clean device bezel. */
 .exl-phone.exl-phone-profile{position:relative;width:min(100%,295px);height:530px;border:7px solid #202124;border-radius:42px;box-shadow:0 3px 0 #5a5a5d inset,0 18px 36px #3c22352b;overflow-y:auto;overflow-x:hidden;background:white}
 .exl-phone.exl-phone-profile>img{display:block;width:103%;max-width:none;height:auto;margin-left:-1.5%;transform:none}
+
+/* Final Instagram device refinement: visible camera island, full-width profile, minimal crop. */
+.exl-phone.exl-phone-profile{position:relative;isolation:isolate;border:8px solid #222326;border-radius:43px;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;background:#fff}
+.exl-phone.exl-phone-profile>img{width:100%;max-width:100%;height:auto;margin-left:0;display:block;transform:none}
+.exl-phone.exl-phone-profile::before{content:"";position:sticky;top:0;display:block;width:37%;height:20px;margin:0 auto -20px;background:#222326;border-radius:0 0 15px 15px;z-index:5;pointer-events:none}
