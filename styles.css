@@ -436,3 +436,10 @@
 .page-intro:has(.experience-title) .experience-portrait-frame{width:100%;max-width:390px;height:420px;justify-self:center;overflow:hidden}
 .page-intro:has(.experience-title) .experience-portrait-frame img{object-position:center 48%}
 @media(max-width:700px){.page-intro:has(.experience-title) .split{grid-template-columns:1fr;gap:28px}.page-intro:has(.experience-title) .experience-portrait-frame{width:82%;max-width:340px;height:360px}}
+
+/* Tighten the Experience page intro so content begins higher on the page. */
+.page-intro:has(.experience-title){padding-top:42px;padding-bottom:32px}
+.page-intro:has(.experience-title) .experience-title{margin-top:10px;margin-bottom:16px}
+.page-intro:has(.experience-title) .lead{margin-top:12px;margin-bottom:0}
+.page-intro:has(.experience-title) + .section{padding-top:55px}
+@media(max-width:700px){.page-intro:has(.experience-title){padding-top:32px;padding-bottom:24px}}
