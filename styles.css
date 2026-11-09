@@ -365,3 +365,6 @@
 .academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals img,
 .academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:auto;width:100%;max-width:none;height:auto;max-height:none;object-fit:contain;justify-self:center;margin:0}
 @media(max-width:700px){.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}}
+
+/* Whimsy Whips: remove tinted hero artwork frame */
+.academic-study:has(img[src$="/ww-1.png"]) .academic-study-cover{background:transparent;padding:0}
