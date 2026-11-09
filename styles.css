@@ -45,3 +45,418 @@
 /* Preserve full case-study boards without cropping their content. */
 .bean-study-row .bean-study-frame{height:auto;overflow:visible}
 .bean-study-row .bean-study-frame img{width:100%;height:auto;object-fit:contain;display:block}
+
+/* Deployment 3 staging: academic portfolio grid */
+.academic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:20px 0 85px}.academic-grid .thumb{height:290px;background:#f8f0ed}.academic-grid .thumb img{object-fit:contain}.academic-grid .eyebrow{display:block;margin-top:16px}.academic-grid .card h3{margin-top:6px}.portfolio-feature{display:grid}.portfolio-feature:hover .link{text-decoration:underline}@media(max-width:650px){.academic-grid{grid-template-columns:1fr;gap:24px}.academic-grid .thumb{height:245px}}
+
+/* Deployment 3 editorial updates */
+.exl-objective-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.exl-contributions{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
+.exl-contributions span{border-left:2px solid var(--orange);padding:7px 11px;background:#faece9;font-size:12px;font-weight:700;color:var(--burg)}
+.exl-brand figure img{padding:0;background:transparent;box-shadow:none;height:auto;max-height:330px;object-fit:contain}
+.exl-brand-grid figure:last-child img{max-height:400px}
+.bl-logo-grid{margin:35px 0 65px}
+.bl-logo-image{background:transparent;border:0}
+.bl-logo-image img{object-fit:contain}
+.bean-study-row .bean-study-frame img{object-fit:contain}
+.academic-study-cover{background:#f7ece9;padding:24px;min-width:0}
+.academic-study-cover img{width:100%;max-height:470px;object-fit:contain}
+.academic-study-content{padding-bottom:70px}
+.academic-study-section{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,75px);padding:60px 0;border-top:1px solid #dfc6c9;align-items:center}
+.academic-study-section h2{font-size:clamp(32px,3.5vw,50px)}
+.academic-study-section p{font-size:15px;line-height:1.8}
+.academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.academic-study-visuals img{display:block;width:100%;height:auto;max-height:450px;object-fit:contain;background:#f8f0ed}
+.academic-study-visuals img:first-child:nth-last-child(odd){grid-column:1/-1}
+@media(max-width:650px){.exl-objective-grid{grid-template-columns:1fr}.exl-objective-grid>div{border-right:0!important;padding:0!important}.academic-study-section{grid-template-columns:1fr;padding:38px 0}.academic-study-cover img{max-height:320px}}
+
+/* Blue Line: let both original transparent logos sit directly on the page background. */
+.bl-hero-logo,.bl-logo-image{background:transparent;border:0;box-shadow:none}
+
+/* Portfolio page: horizontal Blue Line logo blends into the page canvas. */
+.gallery .card[href="#blue-line"] .thumb{background:transparent;padding:26px;overflow:visible}
+.gallery .card[href="#blue-line"] .thumb img{object-fit:contain}
+
+/* Fit the entire horizontal Blue Line logo within its portfolio card. */
+.gallery .card[href="#blue-line"] .thumb{height:300px;padding:48px 52px;box-sizing:border-box;overflow:hidden}
+.gallery .card[href="#blue-line"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.gallery .card[href="#blue-line"]:hover .thumb img{transform:none}
+@media(max-width:650px){.gallery .card[href="#blue-line"] .thumb{padding:35px 28px}}
+
+/* Portfolio page: show the complete Bean artwork without cropping or hover zoom. */
+.gallery .card[href="#the-bean"] .thumb{height:300px;padding:48px 52px;box-sizing:border-box;overflow:hidden;background:transparent}
+.gallery .card[href="#the-bean"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.gallery .card[href="#the-bean"]:hover .thumb img{transform:none}
+@media(max-width:650px){.gallery .card[href="#the-bean"] .thumb{padding:35px 28px}}
+
+/* Deployment 3: reframe Tillman Hall in the featured Portfolio photograph. */
+.portfolio-feature{overflow:hidden}
+.portfolio-feature>img{object-fit:cover;object-position:50% 22%;transform:scale(1.06);transform-origin:center 40%}
+@media(max-width:700px){.portfolio-feature>img{object-position:50% 18%;transform:scale(1.035)}}
+
+/* Compact, clickable academic project buttons on the Portfolio page. */
+.academic-button-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0 85px}
+.academic-project-button{min-width:0;display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:14px;row-gap:7px;padding:26px 30px;border:1px solid #ddc3c7;background:#f7e9e7;color:var(--burg);text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.academic-project-number{grid-column:1/-1;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(23px,2.5vw,34px);font-weight:400;line-height:1.2}
+.academic-project-arrow{font-size:26px;line-height:1}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;border-color:var(--burg);transform:translateY(-2px)}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:1fr;gap:12px}.academic-project-button{padding:21px 23px}}
+
+/* Square academic navigation tiles, centered project names. */
+.academic-button-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:24px 0 85px}
+.academic-project-button{aspect-ratio:1/1;min-height:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:16px;padding:30px;background:#f7e9e7;border:2px solid var(--burg);border-radius:18px;color:var(--burg);text-decoration:none;position:relative;transform:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(27px,3.3vw,47px);line-height:1.12;max-width:90%}
+.academic-project-number{position:absolute;top:24px;left:0;right:0;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--burg)}
+.academic-project-arrow{position:absolute;bottom:22px;left:0;right:0;font-size:28px;line-height:1}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1d9d7;transform:translateY(-2px)}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:18px;border-radius:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,27px)}.academic-project-number{top:13px;font-size:8px}.academic-project-arrow{bottom:11px;font-size:22px}}
+
+/* Refine academic buttons: smaller, lighter square tiles with more breathing room. */
+.academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px 0 72px}
+.academic-project-button{aspect-ratio:1/1;padding:20px 14px;border:1px solid #c9a7ad;border-radius:10px;background:#f8eeec;gap:8px}
+.academic-project-button strong{font-size:clamp(18px,1.85vw,27px);max-width:96%;line-height:1.18}
+.academic-project-number{top:16px;font-size:9px;letter-spacing:.08em;color:#916c75}
+.academic-project-arrow{bottom:12px;font-size:20px}
+@media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.academic-project-button strong{font-size:clamp(19px,3.5vw,28px)}}
+@media(max-width:650px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.academic-project-button{padding:16px 10px;border-radius:10px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-number{top:12px;font-size:8px}.academic-project-arrow{bottom:10px;font-size:19px}}
+
+/* Editorial academic tiles: restrained, brand-led, with a corner accent. */
+.academic-project-button{background:#fffaf5;border:1px solid #dec8c7;border-radius:4px;box-shadow:inset 0 0 0 7px #fffaf5;position:relative;overflow:hidden;transition:background .2s,border-color .2s,transform .2s}
+.academic-project-button::before{content:"";position:absolute;left:0;top:0;width:42px;height:5px;background:var(--orange)}
+.academic-project-button strong{font-size:clamp(19px,1.95vw,29px);letter-spacing:-.015em}
+.academic-project-number{color:#a2777e;letter-spacing:.12em}
+.academic-project-arrow{left:auto;right:17px;bottom:13px;font-size:21px;color:var(--orange)}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#fff3ee;border-color:var(--orange);transform:translateY(-3px)}
+@media(max-width:650px){.academic-project-button{border-radius:4px}.academic-project-button strong{font-size:clamp(17px,4.4vw,23px)}.academic-project-arrow{right:12px;bottom:10px}}
+
+/* Minimal academic project buttons: typography-first, no orange decoration. */
+.academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0 72px}
+.academic-project-button{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:18px;background:#f7eeec;border:1px solid #e2cdd0;border-radius:12px;box-shadow:none;transform:none;overflow:hidden}
+.academic-project-button::before{display:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(19px,2vw,28px);line-height:1.2;text-align:center;max-width:100%;letter-spacing:0}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#f1dfe0;border-color:var(--burg);transform:translateY(-2px)}
+@media(max-width:800px){.academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.academic-button-grid{gap:12px}.academic-project-button{padding:14px;border-radius:10px}.academic-project-button strong{font-size:clamp(18px,4.4vw,24px)}}
+
+/* Academic tiles matched to supplied reference: flat dusty-blush squares and burgundy serif names. */
+.academic-project-button{aspect-ratio:1/1;background:#eadadd;border:0;border-radius:0;box-shadow:none;padding:18px}
+.academic-project-button::before{display:none}
+.academic-project-button strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(20px,2.2vw,32px);line-height:1.22;color:#90003d;max-width:95%;text-align:center}
+.academic-tile-star{display:inline-block;margin-left:.18em;font-family:Georgia,serif;font-size:.72em;font-weight:400;vertical-align:baseline}
+.academic-project-button:hover,.academic-project-button:focus-visible{background:#e5d0d5;border:0;transform:translateY(-2px)}
+@media(max-width:650px){.academic-project-button{border-radius:0;padding:12px}.academic-project-button strong{font-size:clamp(18px,4.5vw,25px)}}
+
+/* Homepage: show full Blue Line and Bean logos without cropping or hover zoom. */
+.cards .card[href="#blue-line"] .thumb,.cards .card[href="#the-bean"] .thumb{padding:22px;box-sizing:border-box;background:transparent;overflow:hidden}
+.cards .card[href="#blue-line"] .thumb img,.cards .card[href="#the-bean"] .thumb img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.cards .card[href="#blue-line"]:hover .thumb img,.cards .card[href="#the-bean"]:hover .thumb img{transform:none}
+@media(max-width:650px){.cards .card[href="#blue-line"] .thumb,.cards .card[href="#the-bean"] .thumb{padding:12px}}
+
+/* Homepage CU-ExL card: isolated logo, matching Blue Line and The Bean. */
+.cards .card[href="#clemson"] .thumb{padding:22px;box-sizing:border-box;background:transparent;overflow:hidden}
+.cards .exl-home-thumb::after{display:none}
+.cards .exl-home-thumb .exl-home-logo{position:static;display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none;filter:none}
+.cards .card:hover .exl-home-thumb .exl-home-logo{transform:none}
+@media(max-width:650px){.cards .card[href="#clemson"] .thumb{padding:12px}}
+
+/* Ensure the single CU-ExL logo fits fully; override generic card image cropping. */
+.cards .card[href="#clemson"] .exl-home-thumb>img:first-child{position:static;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none}
+.cards .card[href="#clemson"]:hover .exl-home-thumb>img:first-child{transform:none}
+
+/* Portfolio project category labels: muted burgundy instead of black. */
+.gallery .card[href="#blue-line"] .small,.gallery .card[href="#the-bean"] .small{color:#90003d;opacity:.78}
+
+/* Academic tiles: centered project names with understated category underneath. */
+.academic-project-button{flex-direction:column;gap:8px}
+.academic-project-category{display:block;font-size:12px;font-weight:400;letter-spacing:.015em;line-height:1.3;color:#90003d;opacity:.78;text-align:center}
+@media(max-width:650px){.academic-project-category{font-size:10px}}
+
+/* Show more sky above Tillman Hall on the Clemson ExL case study hero only. */
+.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{object-position:center center}
+
+/* Clemson ExL case study: taller frame retains flowers below Tillman and sky above. */
+.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{height:560px;object-fit:cover;object-position:center center}
+@media(max-width:900px){.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{height:440px}}
+@media(max-width:650px){.exl-hero:not(.bl-hero):not(.bean-study-hero) .exl-hero-image img{height:380px}}
+
+/* Clemson content section: introduction sits directly below heading; visuals use balanced columns. */
+.exl-social-intro{max-width:740px;margin:14px 0 34px;font-size:14px;line-height:1.7}
+.exl-social .exl-social-grid{grid-template-columns:1fr 1fr;align-items:start;gap:clamp(28px,5vw,70px)}
+@media(max-width:650px){.exl-social .exl-social-grid{grid-template-columns:1fr}.exl-social-intro{margin-bottom:28px}}
+
+/* Keep copy left, phone centered, content types right; align copy near top. */
+.exl-social .exl-social-grid{grid-template-columns:1fr .9fr 1fr;align-items:start;gap:26px}
+.exl-social .exl-social-copy{align-self:start;padding-top:6px}
+@media(max-width:650px){.exl-social .exl-social-grid{grid-template-columns:1fr}}
+
+/* Instagram-style phone: preserve the complete feed image rather than cropping it. */
+.exl-phone-screen{height:100%;display:flex;flex-direction:column;background:#fff;padding-top:19px;box-sizing:border-box}
+.exl-instagram-top{height:45px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 17px;border-bottom:1px solid #eee;font-family:Arial,sans-serif;color:#222;font-size:15px}
+.exl-instagram-top strong{font-size:14px;font-weight:700}.exl-instagram-back{font-size:28px;font-weight:300;line-height:1}
+.exl-instagram-feed{flex:1;min-height:0;overflow-y:auto;scrollbar-width:none}.exl-instagram-feed::-webkit-scrollbar{display:none}
+.exl-instagram-feed img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:top center}
+.exl-instagram-bottom{height:48px;flex:none;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-around;color:#242424;font-size:24px;line-height:1;background:white}
+
+/* Preserve the supplied Instagram profile screenshot from top to bottom. */
+.exl-phone.exl-phone-profile{height:530px;display:flex;align-items:flex-start;justify-content:center;background:#fff;overflow:hidden}
+.exl-phone.exl-phone-profile>img{width:100%;height:100%;object-fit:contain;object-position:center top;transform:none}
+
+/* Actual Clemson Instagram screenshot: display from profile header downward, with scroll for posts. */
+.exl-phone.exl-phone-profile{height:530px;display:block;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;background:#fff}
+.exl-phone.exl-phone-profile::-webkit-scrollbar{display:none}
+.exl-phone.exl-phone-profile>img{display:block;width:100%;height:auto;max-height:none;object-fit:unset;object-position:initial;transform:none}
+
+/* Slightly enlarge the Instagram profile within the phone for a natural screen fit. */
+.exl-phone.exl-phone-profile>img{width:108%;max-width:none;height:auto;margin-left:-4%;}
+
+/* Refined realistic phone framing: less screenshot zoom and a clean device bezel. */
+.exl-phone.exl-phone-profile{position:relative;width:min(100%,295px);height:530px;border:7px solid #202124;border-radius:42px;box-shadow:0 3px 0 #5a5a5d inset,0 18px 36px #3c22352b;overflow-y:auto;overflow-x:hidden;background:white}
+.exl-phone.exl-phone-profile>img{display:block;width:103%;max-width:none;height:auto;margin-left:-1.5%;transform:none}
+
+/* Final Instagram device refinement: visible camera island, full-width profile, minimal crop. */
+.exl-phone.exl-phone-profile{position:relative;isolation:isolate;border:8px solid #222326;border-radius:43px;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;background:#fff}
+.exl-phone.exl-phone-profile>img{width:100%;max-width:100%;height:auto;margin-left:0;display:block;transform:none}
+.exl-phone.exl-phone-profile::before{content:"";position:sticky;top:0;display:block;width:37%;height:20px;margin:0 auto -20px;background:#222326;border-radius:0 0 15px 15px;z-index:5;pointer-events:none}
+
+/* Match approved reference: Instagram username begins just below camera island, no iOS status bar. */
+.exl-phone.exl-phone-profile{width:min(100%,295px);height:530px;border:8px solid #222326;border-radius:43px;overflow:auto hidden;scrollbar-width:none;background:#fff;box-sizing:border-box}
+.exl-phone.exl-phone-profile::before{position:sticky;top:0;width:38%;height:21px;margin:0 auto -21px;border-radius:0 0 15px 15px;background:#222326;z-index:10}
+.exl-phone.exl-phone-profile>img{display:block;width:100%;max-width:100%;height:auto;margin:-31px 0 0;transform:none;object-fit:unset}
+
+/* Alumni portrait: position Maggie slightly lower in her frame to leave headroom. */
+.exl-alumni-grid .exl-alumni-card:first-child .exl-alumni-image img{object-position:center 25%}
+
+/* Branded materials: full-width heading with the business card beneath it. */
+.exl-brand-grid{grid-template-columns:1fr 1fr;gap:26px 32px;align-items:start}
+.exl-brand-intro{grid-column:1/-1;max-width:760px}
+.exl-brand-intro h2{max-width:760px;margin-bottom:14px}
+.exl-brand-intro p{max-width:620px}
+@media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr}.exl-brand-intro{grid-column:1}}
+
+/* Give sticker artwork greater visual emphasis than the business card. */
+.exl-brand-grid>figure:nth-child(2) img{height:185px;max-width:82%;margin:0 auto}
+.exl-brand-grid>figure:nth-child(3) img{height:315px;padding:5px}
+@media(max-width:650px){.exl-brand-grid>figure:nth-child(3) img{height:290px}}
+
+/* Scale sticker sheet up and bring its artwork level with the section heading. */
+.exl-brand-grid>figure:nth-child(3){margin-top:-105px;position:relative}
+.exl-brand-grid>figure:nth-child(3) img{height:420px;width:100%;padding:0;object-fit:contain}
+@media(max-width:650px){.exl-brand-grid>figure:nth-child(3){margin-top:0}.exl-brand-grid>figure:nth-child(3) img{height:330px}}
+
+/* Promotional section: left heading and smaller business card, tall sticker sheet at right. */
+.exl-brand-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);column-gap:52px;row-gap:22px;align-items:start}
+.exl-brand-intro{grid-column:1;grid-row:1;max-width:none}
+.exl-brand-intro h2{max-width:none}
+.exl-brand-intro p{max-width:none}
+.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:75%;margin:0}
+.exl-brand-grid>figure:nth-child(2) img{height:200px;max-width:100%;width:100%;margin:0;object-fit:contain}
+.exl-brand-grid>figure:nth-child(3){grid-column:2;grid-row:1 / span 2;align-self:start;margin:0;position:static}
+.exl-brand-grid>figure:nth-child(3) img{height:470px;width:100%;padding:0;object-fit:contain}
+@media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr;row-gap:24px}.exl-brand-intro{grid-column:1;grid-row:1}.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:85%}.exl-brand-grid>figure:nth-child(3){grid-column:1;grid-row:3;margin:0}.exl-brand-grid>figure:nth-child(3) img{height:360px}}
+
+/* Refine spacing and captions for the two branded-materials visuals. */
+.exl-brand-grid{column-gap:46px;row-gap:16px}
+.exl-brand-grid>figure:nth-child(2){width:78%;margin-top:0}
+.exl-brand-grid>figure:nth-child(2) img{height:175px;display:block}
+.exl-brand-grid>figure:nth-child(3) img{height:390px;display:block}
+.exl-brand-grid figure figcaption{padding:14px 0 0}
+.exl-brand-grid figure figcaption strong{display:block;line-height:1.2}
+.exl-brand-grid figure figcaption p{margin:6px 0 0}
+@media(max-width:650px){.exl-brand-grid{row-gap:24px}.exl-brand-grid>figure:nth-child(2){width:85%}.exl-brand-grid>figure:nth-child(3) img{height:340px}}
+
+/* Align each materials caption with the visible artwork rather than the grid edge. */
+.exl-brand-grid>figure:nth-child(2) img{object-position:left center}
+.exl-brand-grid>figure:nth-child(3) img{object-position:left center}
+.exl-brand-grid>figure:nth-child(2) figcaption,.exl-brand-grid>figure:nth-child(3) figcaption{padding-left:0;text-align:left}
+
+/* Cohesive promotional materials composition: balanced artwork and captions. */
+.exl-brand-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:56px;row-gap:24px;align-items:start}
+.exl-brand-intro{grid-column:1;grid-row:1;max-width:none}
+.exl-brand-intro h2{max-width:none;margin:0 0 18px}
+.exl-brand-intro p{max-width:570px;margin:0;line-height:1.7}
+.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:min(100%,390px);margin:0;align-self:start}
+.exl-brand-grid>figure:nth-child(3){grid-column:2;grid-row:1/span 2;width:100%;margin:0;align-self:start;position:static}
+.exl-brand-grid>figure:nth-child(2) img{width:100%;max-width:none;height:215px;padding:0;object-fit:contain;object-position:center;background:transparent;box-shadow:none;display:block}
+.exl-brand-grid>figure:nth-child(3) img{width:100%;height:390px;padding:0;object-fit:contain;object-position:center;background:transparent;box-shadow:none;display:block}
+.exl-brand-grid figure figcaption{padding:12px 0 0;text-align:left}
+.exl-brand-grid figure figcaption strong{display:block;line-height:1.2}
+.exl-brand-grid figure figcaption p{margin:6px 0 0}
+@media(max-width:650px){.exl-brand-grid{grid-template-columns:1fr;row-gap:28px}.exl-brand-intro{grid-column:1;grid-row:1}.exl-brand-grid>figure:nth-child(2){grid-column:1;grid-row:2;width:min(100%,390px)}.exl-brand-grid>figure:nth-child(3){grid-column:1;grid-row:3}.exl-brand-grid>figure:nth-child(3) img{height:340px}}
+
+/* Larger sticker sheet without disturbing the business-card layout. */
+.exl-brand-grid>figure:nth-child(3) img{height:485px}
+@media(max-width:650px){.exl-brand-grid>figure:nth-child(3) img{height:400px}}
+
+/* Bottom-align sticker sheet and business card artwork across the two columns. */
+@media(min-width:651px){.exl-brand-grid>figure:nth-child(2),.exl-brand-grid>figure:nth-child(3){align-self:end}.exl-brand-grid>figure:nth-child(3){grid-row:1 / span 2}}
+
+/* Nudge sticker artwork left while preserving its size and bottom alignment. */
+@media(min-width:651px){.exl-brand-grid>figure:nth-child(3){transform:translateX(-28px)}}
+
+/* Align the sticker artwork's left edge with its caption. */
+@media(min-width:651px){.exl-brand-grid>figure:nth-child(3){transform:none}.exl-brand-grid>figure:nth-child(3) img{object-position:left center}}
+
+/* Bring Blue Line's hero hierarchy in line with the Clemson case study. */
+.bl-hero .exl-hero-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(35px,5vw,72px);align-items:center}
+.bl-hero h1{font-size:clamp(54px,5.5vw,86px);line-height:.96;margin:20px 0 26px}
+.bl-hero .exl-statement{font-size:clamp(21px,2.15vw,29px);line-height:1.28;max-width:520px;margin-top:25px}
+.bl-hero-logo{min-height:390px;padding:clamp(20px,3vw,48px);border:0;background:#f9ebe7;border-radius:4px}
+.bl-hero-logo img{max-width:100%;max-height:330px}
+@media(max-width:700px){.bl-hero .exl-hero-grid{grid-template-columns:1fr}.bl-hero-logo{min-height:260px}.bl-hero h1{font-size:clamp(50px,10vw,72px)}}
+
+/* Blend the Blue Line logo’s light interior into its hero panel, including the O. */
+.bl-hero-logo img{mix-blend-mode:multiply}
+
+/* Preserve the logo's blue LINE/anniversary details; match its white TECHNOLOGIES counter. */
+.bl-hero-logo{background:#f9ebe7}
+.bl-hero-logo img{mix-blend-mode:normal}
+
+/* The Bean hero only — match approved reference screenshot */
+.bean-study-hero .exl-hero-grid{grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:clamp(42px,6vw,90px);align-items:center}
+.bean-study-hero .bean-study-cover{max-width:none;width:100%;margin:0}
+.bean-study-hero .bean-study-cover .bean-study-frame{height:clamp(340px,31vw,470px);overflow:hidden;border-radius:16px}
+.bean-study-hero .bean-study-cover .bean-study-frame img{height:100%;width:100%;object-fit:cover}
+.bean-study-hero .bean-hero-focus{font-size:13px;color:var(--muted);margin-top:15px}
+.bean-study-hero .exl-statement{margin-top:42px;font-size:clamp(27px,2.6vw,36px);line-height:1.25}
+.bean-study-hero .bean-hero-meta{margin-top:35px}
+@media(max-width:760px){.bean-study-hero .exl-hero-grid{grid-template-columns:1fr;gap:28px}.bean-study-hero .bean-study-cover .bean-study-frame{height:clamp(250px,65vw,410px)}}
+
+/* Align case-study heading details with the Clemson hero reference */
+.bl-hero .exl-kicker,.bean-study-hero .exl-kicker{font-size:clamp(11px,1.05vw,14px);letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--burg);line-height:1.5;margin-top:20px}
+.bl-hero .exl-kicker+.small,.bean-study-hero .exl-kicker+.small{margin-top:16px}
+.bean-study-hero .exl-statement{margin-top:35px}
+
+/* Keep Marketing Research & AI heading to two lines on desktop */
+.exl-hero h1.research-hero-title{font-size:clamp(38px,4.15vw,64px);line-height:1.02;letter-spacing:-.035em}
+
+/* Slightly reduce Marketing Research academic project introduction */
+.academic-study .exl-statement.research-hero-description{font-size:clamp(21px,2vw,27px);line-height:1.3}
+
+/* Remove tinted frame behind Marketing Research hero artwork only */
+.academic-study:has(.research-hero-title) .academic-study-cover{background:transparent;padding:0}
+
+/* Marketing Research: balanced three-slide gallery below section copy */
+.academic-study-section.research-gallery-section{grid-template-columns:1fr;gap:26px;align-items:start}
+.research-gallery-section>div:first-child{max-width:850px}
+.research-gallery-section .academic-study-visuals{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.research-gallery-section .academic-study-visuals img,
+.research-gallery-section .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:auto;width:100%;height:auto;max-height:none;object-fit:contain;background:transparent}
+@media(max-width:700px){.research-gallery-section .academic-study-visuals{grid-template-columns:1fr;gap:20px}}
+
+/* Center the two research case-study slides under section 01 */
+.research-gallery-section .academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:center;justify-content:center;width:min(100%,1000px);margin:8px auto 0}
+.research-gallery-section .academic-study-visuals img,
+.research-gallery-section .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:auto;display:block;width:100%;height:auto;max-height:420px;object-fit:contain;object-position:center;margin:auto}
+@media(max-width:700px){.research-gallery-section .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}.research-gallery-section .academic-study-visuals img{max-height:none}}
+
+/* Summer Fridays: match Marketing Research hero intro and remove image frame */
+.academic-study .exl-statement.summer-fridays-hero-description{font-size:clamp(21px,2vw,27px);line-height:1.3}
+.academic-study:has(.summer-fridays-hero-description) .academic-study-cover{background:transparent;padding:0}
+
+/* Summer Fridays: give Market Segmentation and Launch Campaign slides a centered, readable full-width presentation */
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-visuals img[src$="/sf-7.png"],
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-visuals img[src$="/sf-12.png"]{grid-column:1/-1;width:min(100%,860px);max-height:none;height:auto;object-fit:contain;justify-self:center;margin-inline:auto}
+
+/* Summer Fridays creative slides: match the two-up centered gallery used for Spotify and Netflix */
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3){grid-template-columns:1fr;gap:26px;align-items:start}
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) > div:first-child{max-width:850px}
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start;justify-content:center;width:min(100%,1060px);margin:8px auto 0}
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals img,
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:auto;width:100%;max-width:none;height:auto;max-height:none;object-fit:contain;justify-self:center;margin:0}
+@media(max-width:700px){.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}}
+
+/* Whimsy Whips: remove tinted hero artwork frame */
+.academic-study:has(img[src$="/ww-1.png"]) .academic-study-cover{background:transparent;padding:0}
+
+/* Whimsy Whips: centered two-up demographic and consumer profile gallery. */
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2){grid-template-columns:1fr;gap:26px;align-items:start}
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2)>div:first-child{max-width:850px}
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start;justify-content:center;width:min(100%,1060px);margin:8px auto 0}
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals img{grid-column:auto;display:block;width:100%;max-width:none;height:auto;max-height:none;object-fit:contain;justify-self:center;margin:0}
+@media(max-width:700px){.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}}
+
+/* BioLink hero: center the transparent logo within the right column. */
+.academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:340px;
+  padding:0;
+  background:transparent;
+}
+.academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover img{
+  display:block;
+  width:min(100%,540px);
+  height:auto;
+  max-height:390px;
+  object-fit:contain;
+  object-position:center;
+  margin:auto;
+}
+@media(max-width:700px){
+  .academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover{min-height:220px}
+}
+
+/* Blue Line hero: remove the pink panel behind the logo. */
+.bl-hero .bl-hero-logo{
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+
+/* Keep Experience page title on two intentional lines. */
+.experience-title span{display:block;white-space:nowrap}
+.page-intro .experience-title{font-size:clamp(42px,5.3vw,76px);letter-spacing:-.045em}
+@media(max-width:600px){.page-intro .experience-title{font-size:clamp(37px,9vw,55px)}}
+
+/* Experience page portrait: smaller frame with more headroom. */
+.page-intro:has(.experience-title) .split > img[src*="experience-headshot"]{
+  width:82%;
+  max-width:390px;
+  height:440px;
+  max-height:none;
+  object-fit:cover;
+  object-position:center 18%;
+  justify-self:center;
+}
+@media(max-width:700px){
+  .page-intro:has(.experience-title) .split > img[src*="experience-headshot"]{
+    width:78%;height:360px;
+  }
+}
+
+/* Dedicated, visibly smaller Experience portrait frame. */
+.page-intro .experience-portrait-frame{width:68%;max-width:300px;height:330px;justify-self:center;overflow:hidden}
+@media(max-width:700px){.page-intro .experience-portrait-frame{width:68%;max-width:270px;height:290px}}
+
+/* Balance Experience heading and portrait as a single editorial composition. */
+.page-intro:has(.experience-title) .split{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);align-items:center}
+.page-intro:has(.experience-title) .experience-portrait-frame{width:100%;max-width:390px;height:420px;justify-self:center;overflow:hidden}
+.page-intro:has(.experience-title) .experience-portrait-frame img{object-position:center 48%}
+@media(max-width:700px){.page-intro:has(.experience-title) .split{grid-template-columns:1fr;gap:28px}.page-intro:has(.experience-title) .experience-portrait-frame{width:82%;max-width:340px;height:360px}}
+
+/* Tighten the Experience page intro so content begins higher on the page. */
+.page-intro:has(.experience-title){padding-top:42px;padding-bottom:32px}
+.page-intro:has(.experience-title) .experience-title{margin-top:10px;margin-bottom:16px}
+.page-intro:has(.experience-title) .lead{margin-top:12px;margin-bottom:0}
+.page-intro:has(.experience-title) + .section{padding-top:55px}
+@media(max-width:700px){.page-intro:has(.experience-title){padding-top:32px;padding-bottom:24px}}
+
+/* Experience hero: unified editorial composition, rather than separated heading/photo blocks. */
+.experience-intro{padding-top:58px;padding-bottom:52px}
+.experience-intro .split{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,76px);align-items:center}
+.experience-intro-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-width:0}
+.experience-intro-copy .eyebrow{margin-bottom:22px}
+.experience-intro .experience-title{font-size:clamp(46px,5.4vw,78px);line-height:1.02;margin:0 0 22px;letter-spacing:-.045em}
+.experience-intro .lead{max-width:490px;margin:0;font-size:clamp(17px,1.5vw,20px);line-height:1.55}
+.experience-intro .experience-portrait-frame{width:100%;max-width:375px;height:390px;justify-self:center;overflow:hidden}
+.experience-intro .experience-portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center 48%}
+.experience-intro + .section{padding-top:45px}
+@media(max-width:700px){.experience-intro{padding-top:36px;padding-bottom:35px}.experience-intro .split{grid-template-columns:1fr;gap:28px}.experience-intro .experience-portrait-frame{width:82%;max-width:340px;height:355px}.experience-intro .experience-title{font-size:clamp(42px,9vw,64px)}}
+
+/* Experience portrait proportions based on supplied mockup: taller, fully filled frame. */
+.experience-intro .experience-portrait-frame{width:100%;max-width:375px;height:470px;overflow:hidden}
+.experience-intro .experience-portrait-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 46%}
+@media(max-width:700px){.experience-intro .experience-portrait-frame{width:82%;max-width:340px;height:425px}}
