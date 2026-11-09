@@ -296,3 +296,11 @@
 
 /* Align the sticker artwork's left edge with its caption. */
 @media(min-width:651px){.exl-brand-grid>figure:nth-child(3){transform:none}.exl-brand-grid>figure:nth-child(3) img{object-position:left center}}
+
+/* Bring Blue Line's hero hierarchy in line with the Clemson case study. */
+.bl-hero .exl-hero-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(35px,5vw,72px);align-items:center}
+.bl-hero h1{font-size:clamp(54px,5.5vw,86px);line-height:.96;margin:20px 0 26px}
+.bl-hero .exl-statement{font-size:clamp(21px,2.15vw,29px);line-height:1.28;max-width:520px;margin-top:25px}
+.bl-hero-logo{min-height:390px;padding:clamp(20px,3vw,48px);border:0;background:#f9ebe7;border-radius:4px}
+.bl-hero-logo img{max-width:100%;max-height:330px}
+@media(max-width:700px){.bl-hero .exl-hero-grid{grid-template-columns:1fr}.bl-hero-logo{min-height:260px}.bl-hero h1{font-size:clamp(50px,10vw,72px)}}
