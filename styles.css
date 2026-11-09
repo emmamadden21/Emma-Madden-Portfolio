@@ -375,3 +375,26 @@
 .academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start;justify-content:center;width:min(100%,1060px);margin:8px auto 0}
 .academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals img{grid-column:auto;display:block;width:100%;max-width:none;height:auto;max-height:none;object-fit:contain;justify-self:center;margin:0}
 @media(max-width:700px){.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}}
+
+/* BioLink hero: center the transparent logo within the right column. */
+.academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:340px;
+  padding:0;
+  background:transparent;
+}
+.academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover img{
+  display:block;
+  width:min(100%,540px);
+  height:auto;
+  max-height:390px;
+  object-fit:contain;
+  object-position:center;
+  margin:auto;
+}
+@media(max-width:700px){
+  .academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover{min-height:220px}
+}
