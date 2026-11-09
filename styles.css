@@ -332,3 +332,6 @@
 
 /* Slightly reduce Marketing Research academic project introduction */
 .academic-study .exl-statement.research-hero-description{font-size:clamp(21px,2vw,27px);line-height:1.3}
+
+/* Remove tinted frame behind Marketing Research hero artwork only */
+.academic-study:has(.research-hero-title) .academic-study-cover{background:transparent;padding:0}
