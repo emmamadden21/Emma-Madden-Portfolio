@@ -398,3 +398,10 @@
 @media(max-width:700px){
   .academic-study:has(img[src$="/BIOLINK%20LifeSciences%20Logo.png"]) .academic-study-cover{min-height:220px}
 }
+
+/* Blue Line hero: remove the pink panel behind the logo. */
+.bl-hero .bl-hero-logo{
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
