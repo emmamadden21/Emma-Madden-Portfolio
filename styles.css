@@ -368,3 +368,10 @@
 
 /* Whimsy Whips: remove tinted hero artwork frame */
 .academic-study:has(img[src$="/ww-1.png"]) .academic-study-cover{background:transparent;padding:0}
+
+/* Whimsy Whips: centered two-up demographic and consumer profile gallery. */
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2){grid-template-columns:1fr;gap:26px;align-items:start}
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2)>div:first-child{max-width:850px}
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start;justify-content:center;width:min(100%,1060px);margin:8px auto 0}
+.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals img{grid-column:auto;display:block;width:100%;max-width:none;height:auto;max-height:none;object-fit:contain;justify-self:center;margin:0}
+@media(max-width:700px){.academic-study:has(img[src$="/ww-1.png"]) ~ .academic-study-content .academic-study-section:nth-child(2) .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}}
