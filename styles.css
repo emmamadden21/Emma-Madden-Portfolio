@@ -357,3 +357,11 @@
 /* Summer Fridays: give Market Segmentation and Launch Campaign slides a centered, readable full-width presentation */
 .academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-visuals img[src$="/sf-7.png"],
 .academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-visuals img[src$="/sf-12.png"]{grid-column:1/-1;width:min(100%,860px);max-height:none;height:auto;object-fit:contain;justify-self:center;margin-inline:auto}
+
+/* Summer Fridays creative slides: match the two-up centered gallery used for Spotify and Netflix */
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3){grid-template-columns:1fr;gap:26px;align-items:start}
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) > div:first-child{max-width:850px}
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start;justify-content:center;width:min(100%,1060px);margin:8px auto 0}
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals img,
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:auto;width:100%;max-width:none;height:auto;max-height:none;object-fit:contain;justify-self:center;margin:0}
+@media(max-width:700px){.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-section:nth-child(3) .academic-study-visuals{grid-template-columns:1fr;gap:22px;max-width:520px}}
