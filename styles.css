@@ -434,5 +434,5 @@
 /* Balance Experience heading and portrait as a single editorial composition. */
 .page-intro:has(.experience-title) .split{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);align-items:center}
 .page-intro:has(.experience-title) .experience-portrait-frame{width:100%;max-width:390px;height:420px;justify-self:center;overflow:hidden}
-.page-intro:has(.experience-title) .experience-portrait-frame img{object-position:center 8%}
+.page-intro:has(.experience-title) .experience-portrait-frame img{object-position:center 34%}
 @media(max-width:700px){.page-intro:has(.experience-title) .split{grid-template-columns:1fr;gap:28px}.page-intro:has(.experience-title) .experience-portrait-frame{width:82%;max-width:340px;height:360px}}
