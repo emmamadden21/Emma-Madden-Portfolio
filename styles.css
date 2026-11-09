@@ -353,3 +353,7 @@
 /* Summer Fridays: match Marketing Research hero intro and remove image frame */
 .academic-study .exl-statement.summer-fridays-hero-description{font-size:clamp(21px,2vw,27px);line-height:1.3}
 .academic-study:has(.summer-fridays-hero-description) .academic-study-cover{background:transparent;padding:0}
+
+/* Summer Fridays: give Market Segmentation and Launch Campaign slides a centered, readable full-width presentation */
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-visuals img[src$="/sf-7.png"],
+.academic-study:has(.summer-fridays-hero-description) ~ .academic-study-content .academic-study-visuals img[src$="/sf-12.png"]{grid-column:1/-1;width:min(100%,860px);max-height:none;height:auto;object-fit:contain;justify-self:center;margin-inline:auto}
