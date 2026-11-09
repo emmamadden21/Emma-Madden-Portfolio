@@ -329,3 +329,6 @@
 
 /* Keep Marketing Research & AI heading to two lines on desktop */
 .exl-hero h1.research-hero-title{font-size:clamp(38px,4.15vw,64px);line-height:1.02;letter-spacing:-.035em}
+
+/* Slightly reduce Marketing Research academic project introduction */
+.academic-study .exl-statement.research-hero-description{font-size:clamp(21px,2vw,27px);line-height:1.3}
