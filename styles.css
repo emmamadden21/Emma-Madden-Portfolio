@@ -460,3 +460,7 @@
 .experience-intro .experience-portrait-frame{width:100%;max-width:375px;height:470px;overflow:hidden}
 .experience-intro .experience-portrait-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 46%}
 @media(max-width:700px){.experience-intro .experience-portrait-frame{width:82%;max-width:340px;height:425px}}
+
+/* Experience portrait refinement: add vertical room to show more of the shirt. */
+.page-intro.experience-intro .experience-portrait-frame{width:100%;max-width:390px;height:505px;overflow:hidden}
+@media(max-width:700px){.page-intro.experience-intro .experience-portrait-frame{width:82%;max-width:340px;height:445px}}
