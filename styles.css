@@ -326,3 +326,6 @@
 .bl-hero .exl-kicker,.bean-study-hero .exl-kicker{font-size:clamp(11px,1.05vw,14px);letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--burg);line-height:1.5;margin-top:20px}
 .bl-hero .exl-kicker+.small,.bean-study-hero .exl-kicker+.small{margin-top:16px}
 .bean-study-hero .exl-statement{margin-top:35px}
+
+/* Keep Marketing Research & AI heading to two lines on desktop */
+.exl-hero h1.research-hero-title{font-size:clamp(38px,4.15vw,64px);line-height:1.02;letter-spacing:-.035em}
