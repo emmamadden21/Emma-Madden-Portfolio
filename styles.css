@@ -335,3 +335,11 @@
 
 /* Remove tinted frame behind Marketing Research hero artwork only */
 .academic-study:has(.research-hero-title) .academic-study-cover{background:transparent;padding:0}
+
+/* Marketing Research: balanced three-slide gallery below section copy */
+.academic-study-section.research-gallery-section{grid-template-columns:1fr;gap:26px;align-items:start}
+.research-gallery-section>div:first-child{max-width:850px}
+.research-gallery-section .academic-study-visuals{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.research-gallery-section .academic-study-visuals img,
+.research-gallery-section .academic-study-visuals img:first-child:nth-last-child(odd){grid-column:auto;width:100%;height:auto;max-height:none;object-fit:contain;background:transparent}
+@media(max-width:700px){.research-gallery-section .academic-study-visuals{grid-template-columns:1fr;gap:20px}}
