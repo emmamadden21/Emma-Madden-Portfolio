@@ -311,3 +311,13 @@
 /* Preserve the logo's blue LINE/anniversary details; match its white TECHNOLOGIES counter. */
 .bl-hero-logo{background:#f9ebe7}
 .bl-hero-logo img{mix-blend-mode:normal}
+
+/* The Bean hero only — match approved reference screenshot */
+.bean-study-hero .exl-hero-grid{grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:clamp(42px,6vw,90px);align-items:center}
+.bean-study-hero .bean-study-cover{max-width:none;width:100%;margin:0}
+.bean-study-hero .bean-study-cover .bean-study-frame{height:clamp(340px,31vw,470px);overflow:hidden;border-radius:16px}
+.bean-study-hero .bean-study-cover .bean-study-frame img{height:100%;width:100%;object-fit:cover}
+.bean-study-hero .bean-hero-focus{font-size:13px;color:var(--muted);margin-top:15px}
+.bean-study-hero .exl-statement{margin-top:42px;font-size:clamp(27px,2.6vw,36px);line-height:1.25}
+.bean-study-hero .bean-hero-meta{margin-top:35px}
+@media(max-width:760px){.bean-study-hero .exl-hero-grid{grid-template-columns:1fr;gap:28px}.bean-study-hero .bean-study-cover .bean-study-frame{height:clamp(250px,65vw,410px)}}
