@@ -321,3 +321,8 @@
 .bean-study-hero .exl-statement{margin-top:42px;font-size:clamp(27px,2.6vw,36px);line-height:1.25}
 .bean-study-hero .bean-hero-meta{margin-top:35px}
 @media(max-width:760px){.bean-study-hero .exl-hero-grid{grid-template-columns:1fr;gap:28px}.bean-study-hero .bean-study-cover .bean-study-frame{height:clamp(250px,65vw,410px)}}
+
+/* Align case-study heading details with the Clemson hero reference */
+.bl-hero .exl-kicker,.bean-study-hero .exl-kicker{font-size:clamp(11px,1.05vw,14px);letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--burg);line-height:1.5;margin-top:20px}
+.bl-hero .exl-kicker+.small,.bean-study-hero .exl-kicker+.small{margin-top:16px}
+.bean-study-hero .exl-statement{margin-top:35px}
