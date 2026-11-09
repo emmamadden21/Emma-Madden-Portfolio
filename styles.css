@@ -307,3 +307,7 @@
 
 /* Blend the Blue Line logo’s light interior into its hero panel, including the O. */
 .bl-hero-logo img{mix-blend-mode:multiply}
+
+/* Preserve the logo's blue LINE/anniversary details; match its white TECHNOLOGIES counter. */
+.bl-hero-logo{background:#fff}
+.bl-hero-logo img{mix-blend-mode:normal}
