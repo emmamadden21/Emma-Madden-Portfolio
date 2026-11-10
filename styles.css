@@ -500,3 +500,6 @@
 /* Keep the Academic Projects artwork centered within its tile. */
 .cards .card[href="#work"] .thumb{display:flex;align-items:center;justify-content:center}
 .cards .card[href="#work"] .empty-visual{display:block;width:100%;margin:0;text-align:center}
+
+/* Match both Portfolio page section headings at responsive 56–94px. */
+.academic-work-heading{font-size:clamp(56px,7vw,94px)}
