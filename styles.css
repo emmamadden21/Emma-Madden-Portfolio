@@ -467,3 +467,9 @@
 
 /* Ensure the branded star renders consistently on mobile and desktop. */
 .spark .brand-star{display:inline-block;width:1em;height:1em;vertical-align:-.08em;color:#F44912;fill:currentColor}
+
+/* Cross-platform icons: avoid emoji font substitution on mobile. */
+.ui-arrow{display:inline-block;width:1em;height:1em;vertical-align:-.12em;flex-shrink:0}
+.ui-arrow-up{width:.9em;height:.9em}
+.ui-menu{display:inline-block;width:1.1em;height:1.1em;vertical-align:-.16em}
+.empty-visual .spark{display:inline-block;color:#F44912}
