@@ -512,3 +512,7 @@
 /* Align the orange Academic Projects artwork visually with the left-aligned title and subtitle below. */
 .cards .card[href="#work"] .empty-visual{transform:translateX(-38px)}
 @media(max-width:650px){.cards .card[href="#work"] .empty-visual{transform:translateX(-28px)}}
+
+/* Homepage featured cards: reduce vertical whitespace between artwork and captions. */
+.cards .card .thumb{height:160px}
+.cards .card h3{margin-top:10px}
