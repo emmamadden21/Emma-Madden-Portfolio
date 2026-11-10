@@ -496,3 +496,7 @@
 
 /* Portfolio page only: slightly reduce the top title; leave Academic Work unchanged. */
 .page-intro:has(+ section .academic-work-heading) h1{font-size:clamp(56px,7vw,94px)}
+
+/* Keep the Academic Projects artwork centered within its tile. */
+.cards .card[href="#work"] .thumb{display:flex;align-items:center;justify-content:center}
+.cards .card[href="#work"] .empty-visual{display:block;width:100%;margin:0;text-align:center}
