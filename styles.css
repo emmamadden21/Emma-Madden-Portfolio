@@ -508,3 +508,7 @@
 .cards .card[href="#work"] .thumb{display:grid;place-items:center;min-width:0}
 .cards .card[href="#work"] .empty-visual{box-sizing:border-box;width:max-content;max-width:100%;padding:0 12px;margin:0;justify-self:center;text-align:center;font-size:clamp(30px,2.7vw,42px);line-height:1.15;transform:translateX(-5px)}
 @media(max-width:650px){.cards .card[href="#work"] .empty-visual{font-size:clamp(34px,8vw,42px)}}
+
+/* Align the orange Academic Projects artwork visually with the left-aligned title and subtitle below. */
+.cards .card[href="#work"] .empty-visual{transform:translateX(-38px)}
+@media(max-width:650px){.cards .card[href="#work"] .empty-visual{transform:translateX(-28px)}}
