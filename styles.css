@@ -489,3 +489,7 @@
 .cards .card[href="#work"] .empty-visual{width:100%;padding:12px 20px;text-align:center;font-family:"DM Serif Display",serif;font-style:italic;font-weight:400;font-size:clamp(38px,3.5vw,56px);line-height:1.1;color:#F44912}
 .cards .card[href="#work"] .empty-visual .spark{position:absolute;right:14%;top:17%;margin:0;font-style:normal;font-size:22px}
 @media(max-width:650px){.cards .card[href="#work"] .empty-visual{font-size:clamp(42px,10vw,58px)}}
+
+/* Portfolio page: emphasize work categories and match section title hierarchy. */
+.gallery .card > .small{font-size:19px}
+.academic-work-heading{font-size:clamp(63px,8.5vw,112px);line-height:.89;letter-spacing:-.045em;margin:76px 0 34px}
