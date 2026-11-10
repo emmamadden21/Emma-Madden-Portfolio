@@ -467,3 +467,7 @@
 
 /* Ensure the branded star renders consistently on mobile and desktop. */
 .spark .brand-star{display:inline-block;width:1em;height:1em;vertical-align:-.08em;color:#F44912;fill:currentColor}
+
+/* Targeted mobile emoji fix: preserve existing page markup and layout. */
+.text-arrow-icon{display:inline-block;width:.9em;height:.9em;vertical-align:-.08em;flex-shrink:0}
+.empty-visual .spark{display:inline-block;color:#F44912}
