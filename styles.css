@@ -471,3 +471,15 @@
 /* Targeted mobile emoji fix: preserve existing page markup and layout. */
 .text-arrow-icon{display:inline-block;width:.9em;height:.9em;vertical-align:-.08em;flex-shrink:0}
 .empty-visual .spark{display:inline-block;color:#F44912}
+
+/* Home featured-work Academic Projects tile: remove colored thumbnail backdrop. */
+.cards .card[href="#work"] .thumb{background:transparent}
+
+/* Home Academic Projects tile: use the brand orange for its display text. */
+.cards .card[href="#work"] .empty-visual{color:#F44912}
+
+/* Portfolio card category labels: slightly larger for readability. */
+.gallery .card > .small{font-size:16px}
+
+/* Separate academic projects from professional and personal portfolio work. */
+.academic-work-heading{margin:64px 0 24px;font-size:clamp(34px,4vw,52px);line-height:1.1;color:var(--burg)}
