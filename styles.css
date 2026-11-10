@@ -474,3 +474,6 @@
 
 /* Home featured-work Academic Projects tile: remove colored thumbnail backdrop. */
 .cards .card[href="#work"] .thumb{background:transparent}
+
+/* Home Academic Projects tile: use the brand orange for its display text. */
+.cards .card[href="#work"] .empty-visual{color:#F44912}
