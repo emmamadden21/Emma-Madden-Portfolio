@@ -516,3 +516,11 @@
 /* Homepage featured cards: reduce vertical whitespace between artwork and captions. */
 .cards .card .thumb{height:160px}
 .cards .card h3{margin-top:10px}
+
+/* Homepage hero: compact, coordinated action buttons. */
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:18px}
+.hero-actions .btn{margin-top:0;padding:12px 15px;font-size:10px;letter-spacing:.055em;display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap}
+.hero-actions .btn .text-arrow-icon{width:13px;height:13px;flex:none}
+.hero-actions .hero-secondary{background:transparent;color:var(--burg);border:1px solid var(--burg)}
+.hero-actions .hero-secondary:hover{background:var(--burg);color:#fff}
+@media(max-width:500px){.hero-actions{gap:8px}.hero-actions .btn{padding:11px 12px;font-size:10px}}
