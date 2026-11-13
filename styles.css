@@ -551,3 +551,16 @@
 .academic-study-visuals.research-highlight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start;width:100%;max-width:1100px;margin:28px auto 0}
 .academic-study-visuals.research-highlight-grid img{display:block;width:100%;height:auto;max-width:none;object-fit:contain}
 @media(max-width:700px){.academic-study-visuals.research-highlight-grid{grid-template-columns:1fr;gap:18px}}
+
+/* Curacations: profile slide beside strategy text, findings below */
+.cura-strategy-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:42px;align-items:center}
+.cura-strategy-copy{min-width:0}
+.cura-strategy-profile{min-width:0}
+.cura-strategy-profile .cura-slide{margin:0}
+.cura-strategy-profile img{display:block;width:100%;height:auto;object-fit:contain}
+.cura-strategy-section>.cura-single-slide{margin:40px auto 0}
+@media(max-width:850px){.cura-strategy-grid{grid-template-columns:1fr;gap:26px}.cura-strategy-profile{max-width:680px;margin:0 auto;width:100%}}
+
+/* Keep all five Academic Work tiles in one row on desktop. */
+@media(min-width:1100px){.academic-button-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.academic-project-button{padding:14px 10px}.academic-project-button strong{font-size:clamp(18px,1.8vw,27px)}.academic-project-category{font-size:clamp(10px,.85vw,13px)}}
+@media(min-width:801px) and (max-width:1099px){.academic-button-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
