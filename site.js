@@ -23,7 +23,7 @@ function experience(){const rows=[
  ['Walt Disney World',[
   ['Guest Relations','May 2025 – July 2025','Delivered personalized guest experiences, managed service recovery and complex inquiries, and collaborated across departments in high-volume environments; recognized by leadership for exceptional service.'],
   ['Merchandise','January 2025 – May 2025','Responsible for merchandise and retail operations while delivering thoughtful guest experiences in a fast-paced environment.'],
-  ['Disney College Program · Merchandise & Trainer','August 2022 – June 2023','Started in merchandise and was promoted to Disney Cast Member Trainer, leading onboarding and training in guest service, inventory, sales, and operations; received the quarterly Magical Merchant award.']
+  ['Merchandise & Trainer - Disney College Program','August 2022 – June 2023','Started in merchandise and was promoted to Disney Cast Member Trainer, leading onboarding and training in guest service, inventory, sales, and operations; received the quarterly Magical Merchant award.']
  ]],
  ['Café Moka','Supervisor & Social Media Marketing','August 2023 – December 2024','Supervised café operations and collaborated with management on social media content, seasonal menus, and promotional campaigns.'],
  ['Blue Line Technologies','Marketing Intern','June 2023 – August 2023','Conducted market research, competitive analysis, and customer profiling; analyzed industry trends and supported campaigns to build brand awareness.'],
