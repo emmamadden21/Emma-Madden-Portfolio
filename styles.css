@@ -567,3 +567,18 @@
 
 /* Curacations: give section 01 and 02 visuals slightly more room. */
 @media(min-width:851px){.cura-opportunity-section .cura-strategy-grid,.cura-strategy-section .cura-strategy-grid{grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:28px}}
+
+/* Pirates case study: consistent portfolio framing, responsive imagery. */
+.pirates-hero-image{display:flex;align-items:center;justify-content:center;min-width:0}
+.pirates-hero-image img{display:block;width:min(100%,440px);height:auto;object-fit:contain}
+.pirates-brand-gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;margin:32px 0}
+.pirates-brand-gallery figure,.pirates-campaign-grid figure{margin:0;min-width:0}
+.pirates-brand-gallery img,.pirates-campaign-grid img{display:block;width:100%;height:auto;object-fit:contain}
+.pirates-campaign-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px;margin-top:28px}
+.pirates-campaign-grid article{min-width:0}
+.pirates-campaign-grid h3{margin:0 0 14px}
+.pirates-campaign-grid p{margin-bottom:24px}
+.pirates-disclaimer{margin:30px 0}
+@media(max-width:750px){.pirates-brand-gallery,.pirates-campaign-grid{grid-template-columns:1fr;gap:26px}.pirates-hero-image img{max-width:340px}}
+/* Six academic project tiles fit on one desktop row. */
+@media(min-width:1100px){.academic-button-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.academic-project-button{padding:13px 7px}.academic-project-button strong{font-size:clamp(16px,1.45vw,23px)}.academic-project-category{font-size:clamp(9px,.75vw,12px)}}
