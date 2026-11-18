@@ -582,3 +582,17 @@
 @media(max-width:750px){.pirates-brand-gallery,.pirates-campaign-grid{grid-template-columns:1fr;gap:26px}.pirates-hero-image img{max-width:340px}}
 /* Six academic project tiles fit on one desktop row. */
 @media(min-width:1100px){.academic-button-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.academic-project-button{padding:13px 7px}.academic-project-button strong{font-size:clamp(16px,1.45vw,23px)}.academic-project-category{font-size:clamp(9px,.75vw,12px)}}
+
+/* Academic Work: four rectangular tiles above two centered tiles. */
+@media(min-width:801px){
+  .academic-button-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0 72px}
+  .academic-project-button{aspect-ratio:1.55/1;min-height:0;padding:20px 16px}
+  .academic-project-button strong{font-size:clamp(19px,2vw,29px)}
+  .academic-project-category{font-size:clamp(11px,1vw,13px)}
+  .academic-button-grid .academic-project-button:nth-child(5){grid-column:2}
+  .academic-button-grid .academic-project-button:nth-child(6){grid-column:3}
+}
+@media(max-width:800px){
+  .academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .academic-project-button{aspect-ratio:1.4/1;min-height:0;padding:14px 10px}
+}
