@@ -611,3 +611,9 @@
 .pirates-swatch-grid small{font-size:clamp(9px,.8vw,12px);color:#101010;letter-spacing:0}
 @media(max-width:900px){.pirates-identity-board{grid-template-columns:1fr 1fr;padding:20px 14px}.pirates-board-palette{grid-column:1/-1;border-left:0!important;border-top:1px solid #6b6b63;margin-top:16px;padding-top:22px!important}.pirates-board-primary img{max-height:260px}}
 @media(max-width:550px){.pirates-identity-board{grid-template-columns:1fr}.pirates-identity-board>div+div{border-left:0;border-top:1px solid #6b6b63}.pirates-board-palette{grid-column:auto}.pirates-board-secondary img{max-height:190px}.pirates-swatch-grid{gap:8px}}
+
+/* Pirates case study: balanced media sizing and intentional opportunity heading break. */
+.pirates-opportunity-heading span{display:block}
+.pirates-identity-board{width:100%;max-width:940px;margin-left:auto;margin-right:auto}
+.pirates-campaign-grid figure{max-width:410px;margin-left:auto;margin-right:auto}
+@media(max-width:750px){.pirates-campaign-grid figure{max-width:390px}}
