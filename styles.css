@@ -596,3 +596,18 @@
   .academic-button-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
   .academic-project-button{aspect-ratio:1.4/1;min-height:0;padding:14px 10px}
 }
+
+/* Pirates Section 02 — clean horizontal identity board with original logo files. */
+.pirates-identity-board{display:grid;grid-template-columns:1.05fr 1.1fr 1fr;align-items:center;gap:0;background:#f8f4e6;color:#101010;border-bottom:14px solid #101010;border-top:4px solid #ffb612;box-shadow:0 1px 0 #ffb612;padding:32px 22px 38px;margin:22px 0 40px;min-height:330px}
+.pirates-identity-board>div{min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:12px 22px;height:100%}
+.pirates-identity-board>div+div{border-left:1px solid #6b6b63}
+.pirates-board-primary img{display:block;width:100%;max-width:330px;max-height:315px;object-fit:contain}
+.pirates-board-secondary img{display:block;width:100%;max-width:380px;max-height:230px;object-fit:contain}
+.pirates-identity-board h3{font-family:Georgia,serif;text-transform:uppercase;font-size:clamp(16px,1.6vw,25px);letter-spacing:.07em;text-align:center;color:#101010;border-bottom:5px solid #ffb612;padding:0 0 9px;margin:0 0 22px}
+.pirates-swatch-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:100%;text-align:center}
+.pirates-swatch-grid>div{min-width:0;display:flex;flex-direction:column;align-items:center;gap:6px}
+.pirates-swatch{width:100%;max-width:70px;aspect-ratio:1;border:1px solid #a5a197;border-radius:8px}
+.pirates-swatch-grid strong{font-size:clamp(10px,.95vw,13px);text-transform:uppercase;line-height:1.2;color:#101010}
+.pirates-swatch-grid small{font-size:clamp(9px,.8vw,12px);color:#101010;letter-spacing:0}
+@media(max-width:900px){.pirates-identity-board{grid-template-columns:1fr 1fr;padding:20px 14px}.pirates-board-palette{grid-column:1/-1;border-left:0!important;border-top:1px solid #6b6b63;margin-top:16px;padding-top:22px!important}.pirates-board-primary img{max-height:260px}}
+@media(max-width:550px){.pirates-identity-board{grid-template-columns:1fr}.pirates-identity-board>div+div{border-left:0;border-top:1px solid #6b6b63}.pirates-board-palette{grid-column:auto}.pirates-board-secondary img{max-height:190px}.pirates-swatch-grid{gap:8px}}
